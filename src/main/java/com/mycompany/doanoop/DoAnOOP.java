@@ -11,6 +11,9 @@ package com.mycompany.doanoop;
 public class DoAnOOP {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        PhuongTien phuongtien = new PhuongTien();
+        phuongtien.nhap();
+        phuongtien.xuat();
+        
     }
 }
