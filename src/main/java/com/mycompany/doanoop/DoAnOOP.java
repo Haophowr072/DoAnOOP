@@ -6,14 +6,13 @@ package com.mycompany.doanoop;
 
 /**
  *
- * @author ngHao
+ * @author Smilee
  */
 public class DoAnOOP {
 
     public static void main(String[] args) {
-        PhuongTien phuongtien = new PhuongTien();
-        phuongtien.nhap();
-        phuongtien.xuat();
-        
+        DanhSachPhuongTien danhsach = new DanhSachPhuongTien();
+        danhsach.them();
+        danhsach.xuat();
     }
 }
