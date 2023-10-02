@@ -1,0 +1,70 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.doanoop;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author huy
+ */
+public class PhuongTien {
+    private String bienKiemSoat;
+    private int soChoNgoi;
+    private String loaiPhuongTien;
+    
+    public PhuongTien() {
+        this.bienKiemSoat = "" ;
+        this.soChoNgoi = 0 ;
+        this.loaiPhuongTien = "";
+    }
+
+    public PhuongTien(String bienKiemSoat, int soChoNgoi, String loaiPhuongTien) {
+        this.bienKiemSoat = bienKiemSoat;
+        this.soChoNgoi = soChoNgoi;
+        this.loaiPhuongTien = loaiPhuongTien;
+    }
+
+    public String getBienKiemSoat() {
+        return bienKiemSoat;
+    }
+
+    public void setBienKiemSoat(String bienKiemSoat) {
+        this.bienKiemSoat = bienKiemSoat;
+    }
+
+    public int getSoChoNgoi() {
+        return soChoNgoi;
+    }
+
+    public void setSoChoNgoi(int soChoNgoi) {
+        this.soChoNgoi = soChoNgoi;
+    }
+
+    public String getLoaiPhuongTien() {
+        return loaiPhuongTien;
+    }
+
+    public void setLoaiPhuongTien(String loaiPhuongTien) {
+        this.loaiPhuongTien = loaiPhuongTien;
+    }
+    
+    public void nhap(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" Nhap bien kiem soat ");
+        bienKiemSoat = sc.nextLine() ;
+        System.out.println(" Nhap so cho ngoi ");
+        soChoNgoi = sc.nextInt() ;
+        sc.nextLine();
+        System.out.println(" Nhap loai phuong tien ");
+        loaiPhuongTien = sc.nextLine() ;
+    }
+    
+    public void xuat(){
+        System.out.println("Bien kiem soat la : " + bienKiemSoat );
+        System.out.println("So cho ngoi  : " + soChoNgoi );
+        System.out.println("Loai Phuong tien la : " + loaiPhuongTien );
+    }
+}
