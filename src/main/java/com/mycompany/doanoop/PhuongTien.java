@@ -20,7 +20,8 @@ public class PhuongTien {
         this.soChoNgoi = 0 ;
         this.loaiPhuongTien = "";
     }
-
+ 
+ 
     public PhuongTien(String bienKiemSoat, int soChoNgoi, String loaiPhuongTien) {
         this.bienKiemSoat = bienKiemSoat;
         this.soChoNgoi = soChoNgoi;
