@@ -86,6 +86,8 @@ public class ThanhPho {
 		khiHau = sc.nextLine();
 		System.out.println("Nhap nhiet do : ");
 		nhietDo = sc.nextLine();
+		System.out.println("Nhập ngôn ngữ");
+		ngonNgu = sc.nextLine();
 		System.out.println("Nhap ngay den : ");
 		ngayDen = sc.nextLine();
 		System.out.println("Nhap ngay di : ");

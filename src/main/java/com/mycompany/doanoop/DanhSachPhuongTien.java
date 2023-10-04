@@ -4,8 +4,9 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class DanhSachPhuongTien implements DanhSach {
-	PhuongTien dspt[];
-	int soLuongpt ;
+	private PhuongTien dspt[];
+	private int soLuongpt ;
+	Scanner sc = new Scanner(System.in);
 	
 	public DanhSachPhuongTien() {
 		int soLuongpt = 0;
@@ -18,11 +19,10 @@ public class DanhSachPhuongTien implements DanhSach {
 	}
 
 	
-	
-	@Override
+
 	public void them() {
 		Scanner sc = new Scanner(System.in);
-		System.out.println(" Nhap so luong phuong tien can them ");
+		System.out.println("Nhap so luong phuong tien can them ");
 		int so = sc.nextInt();
 		sc.nextLine();
 		for(int i=0 ; i<so ; i++) {
@@ -32,44 +32,79 @@ public class DanhSachPhuongTien implements DanhSach {
 			soLuongpt++;
 		}
 		System.out.println(" Them thanh cong ");
-			
+		
 	}
 
-	@Override
 	public void xoa() {
-		// TODO Auto-generated method stub
+		xuat();
+		System.out.println(" Nhap bien so xe can xoa ");
+		String bienso =sc.nextLine(); 
+		for(int i=0 ; i<soLuongpt ; i++) {
+			if(dspt[i].getBienKiemSoat().equals(bienso)) {
+				for(int j=i; j<soLuongpt -1; j++) {
+					dspt[j]=dspt[j+1];
+					dspt = Arrays.copyOf(dspt, soLuongpt-1);
+					System.out.println("Xoa thanh cong");
+				}
+				soLuongpt--;
+				return;
+			}
+			
+		}
+		
 		
 	}
 
-	@Override
 	public void sua() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void timKiem() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void showMenu() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void xuat() {
-		System.out.println("Danh sach phuong tien  ");
-		for(int i=0; i<dspt.length;i++) {
-			System.out.println("Danh sach phuong tien thu " + (i+1) + " la ");
-			dspt[i].xuat();
-			System.out.println("----------------------------------------");
+		xuat();
+		System.out.println("Nhập biển số xe cần sửa");
+		String bienso =sc.nextLine();
+		for(int i=0; i<soLuongpt ; i++) {
+			if(dspt[i].getBienKiemSoat().equals(bienso)) {
+				dspt[i].nhap();
+				System.out.println("Sửa thành công");
+				return;
+			}
 		}
 	}
+
+	public void timKiem() {
+		xuat();
+		System.out.println("Nhập biển số xe cần tìm ");
+		String bienso = sc.nextLine();
+		for(int i=0 ; i<soLuongpt ; i++) {
+			if(dspt[i].getBienKiemSoat().equals(bienso)) {
+				dspt[i].xuat();
+				return;
+			}
+		}
+		
+		
+	}
+
+	public void xuat() {
+		if(dspt.length==0) {
+			System.out.println("Danh sach phuong tien trong ");
+		}
+		else {
+			System.out.println("Danh sach phuong tien ");
+			for(int i = 0 ; i<soLuongpt ; i++) {
+				System.out.println("Phuong tien thu  "  + (i+1) + " : ");
+				System.out.println("Phuong tien co bien so xe : "+ dspt[i].getBienKiemSoat());
+				System.out.println("So cho ngoi : "+ dspt[i].getSoChoNgoi());
+				System.out.println("Loai phuong tien la : "+ dspt[i].getLoaiPhuongTien());
+				System.out.println();
+			}
+		}
+		
+	}
 	
-	
+	public void showMenu() {
+		
+		
+		
+	}
+
 	
 
 }
