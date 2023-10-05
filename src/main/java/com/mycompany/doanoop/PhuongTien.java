@@ -54,18 +54,18 @@ public class PhuongTien {
     
     public void nhap(){
         Scanner sc = new Scanner(System.in);
-        System.out.println(" Nhap bien kiem soat ");
+        System.out.println(" Nhập biển kiểm soát ");
         bienKiemSoat = sc.nextLine() ;
-        System.out.println(" Nhap so cho ngoi ");
+        System.out.println(" Nhập số chỗ ngồi ");
         soChoNgoi = sc.nextInt() ;
         sc.nextLine();
-        System.out.println(" Nhap loai phuong tien ");
+        System.out.println(" Nhập loại phương tiện ");
         loaiPhuongTien = sc.nextLine() ;
     }
     
     public void xuat(){
-        System.out.println("Bien kiem soat la : " + bienKiemSoat );
-        System.out.println("So cho ngoi  : " + soChoNgoi );
-        System.out.println("Loai Phuong tien la : " + loaiPhuongTien );
+        System.out.println("Biển kiểm soát  : " + bienKiemSoat );
+        System.out.println("Số chỗ ngồi  : " + soChoNgoi );
+        System.out.println("Loại phương tiện : " + loaiPhuongTien );
     }
 }

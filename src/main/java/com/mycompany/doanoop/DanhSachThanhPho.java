@@ -38,30 +38,56 @@ public class DanhSachThanhPho implements DanhSach{
 
 	@Override
 	public void xoa() {
-		// TODO Auto-generated method stub
+		xuat();
+		System.out.println("Nhập thành phố cần xóa");
+		String thanhpho =sc.nextLine();
+		for(int i=0 ; i<soLuongtp ; i++) {
+			if(dstp[i].getTen().equals(thanhpho)) {
+				for(int j=i; j<soLuongtp-1 ;j++) {
+					dstp[j] = dstp[j+1];
+					dstp = Arrays.copyOf( dstp, soLuongtp-1) ;
+				}
+				System.out.println("Xóa thành công");
+				soLuongtp--;
+				return;
+			}
+		}
 		
 	}
 
 
 	@Override
 	public void sua() {
-		// TODO Auto-generated method stub
-		
+		xuat();
+		System.out.println("Nhập thành phố cần sửa");
+		String thanhpho =sc.nextLine();
+		for(int i=0; i<soLuongtp ; i++) {
+			if(dstp[i].getTen().equals(thanhpho)) {
+				dstp[i].nhap();
+				System.out.println("Sửa thành công");
+				return;
+			}
+		}
 	}
 
 
 	@Override
 	public void timKiem() {
-		// TODO Auto-generated method stub
+		System.out.println("Nhập thành phố cần tìm");
+		String thanhpho = sc.nextLine();
+		for(int i=0 ; i<soLuongtp; i++) {
+			if(dstp[i].getTen().equals(thanhpho)) {
+			dstp[i].xuat();
+			return;
+			}
+		}
 		
 	}
 
 
 	@Override
-	public void showMenu() {
-		// TODO Auto-generated method stub
-		
-	}
+	
+
 
 
 	public void xuat() {
@@ -84,7 +110,48 @@ public class DanhSachThanhPho implements DanhSach{
 		
 	}
 	
-	
+	public void showMenu() {
+		System.out.println("MENU THÀNH PHỐ");
+		int chon=0;
+		do {
+			System.out.println("1. Thêm thành phố ");
+			System.out.println("2. Xóa thành phố ");
+			System.out.println("3. Sửa thành phố ");
+			System.out.println("4. Tìm kiếm thành phố ");
+			System.out.println("5. Xuất danh sách thành phố ");
+			System.out.println("6. Thoát ");
+			System.out.println("Vui lòng chọn");
+			chon = sc.nextInt();
+			sc.nextLine();
+			switch(chon){
+				case 1:
+					them();
+					break;
+					
+				case 2:
+					xoa();
+					break;
+					
+				case 3 :
+					sua();
+					break;
+					
+				case 4:
+					timKiem();
+					break;
+					
+				case 5:
+					xuat();
+					break;
+				case 6:
+					return;
+					
+				default :
+					System.out.println("Nhập sai !! vui lòng chọn lại ");
+					break;
+			}
+		} while(chon!=0);
+	}
 	
 
 }
