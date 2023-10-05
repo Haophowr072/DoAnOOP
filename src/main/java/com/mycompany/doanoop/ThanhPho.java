@@ -1,7 +1,10 @@
 package com.mycompany.doanoop;
 
 import java.util.Scanner;
-
+/**
+ *
+ * @author huy
+ */
 public class ThanhPho {
       private String ten;
       private String khiHau;
