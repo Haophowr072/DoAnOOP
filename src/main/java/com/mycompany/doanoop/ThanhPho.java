@@ -83,27 +83,27 @@ public class ThanhPho {
 	
 	public void nhap () {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Nhap ten : ");
+		System.out.println("Nhập tên : ");
 		ten = sc.nextLine();
-		System.out.println("Nhap khi hau : ");
+		System.out.println("Nhập khí hậu : ");
 		khiHau = sc.nextLine();
-		System.out.println("Nhap nhiet do : ");
+		System.out.println("Nhập nhiệt độ : ");
 		nhietDo = sc.nextLine();
 		System.out.println("Nhập ngôn ngữ");
 		ngonNgu = sc.nextLine();
-		System.out.println("Nhap ngay den : ");
+		System.out.println("Nhập ngày đến : ");
 		ngayDen = sc.nextLine();
-		System.out.println("Nhap ngay di : ");
+		System.out.println("Nhập ngày đi : ");
 		ngayDi = sc.nextLine();
 	}
       
      public void xuat () {
-    	 System.out.println(" Ten la : " + ten);
-    	 System.out.println(" Khi hau la : " + khiHau);
-    	 System.out.println(" Nhiet do la : " + nhietDo);
-    	 System.out.println(" Ngon ngu  : " + ngonNgu);
-    	 System.out.println(" Ngay den la : " + ngayDen);
-    	 System.out.println(" Ngay di  : " + ngayDi);
+    	 System.out.println(" Tên là : " + ten);
+    	 System.out.println(" Khí hậu là : " + khiHau);
+    	 System.out.println(" Nhiệt độ là : " + nhietDo);
+    	 System.out.println(" Ngôn ngữ  : " + ngonNgu);
+    	 System.out.println(" Ngày đến : " + ngayDen);
+    	 System.out.println(" Ngày đi  : " + ngayDi);
      }
 	
 

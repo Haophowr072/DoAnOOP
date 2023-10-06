@@ -25,7 +25,7 @@ public class DanhSachPhuongTien implements DanhSach {
 
 	public void them() {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Nhap so luong phuong tien can them ");
+		System.out.println("Nhập số lượng cần thêm ");
 		int so = sc.nextInt();
 		sc.nextLine();
 		for(int i=0 ; i<so ; i++) {
@@ -34,21 +34,21 @@ public class DanhSachPhuongTien implements DanhSach {
 			dspt[soLuongpt].nhap();
 			soLuongpt++;
 		}
-		System.out.println(" Them thanh cong ");
+		System.out.println(" Thêm thành công ");
 		
 	}
 
 	public void xoa() {
 		xuat();
-		System.out.println(" Nhap bien so xe can xoa ");
+		System.out.println(" Nhập biển số xe cần xóa ");
 		String bienso =sc.nextLine(); 
 		for(int i=0 ; i<soLuongpt ; i++) {
 			if(dspt[i].getBienKiemSoat().equals(bienso)) {
-				for(int j=i; j<soLuongpt -1; j++) {
+				for(int j=i; j<soLuongpt-1; j++) {
 					dspt[j]=dspt[j+1];
 					dspt = Arrays.copyOf(dspt, soLuongpt-1);
-					System.out.println("Xoa thanh cong");
 				}
+				System.out.println(" Xóa thành công ");
 				soLuongpt--;
 				return;
 			}
@@ -103,11 +103,45 @@ public class DanhSachPhuongTien implements DanhSach {
 	}
 	
 	public void showMenu() {
-		
-		
-		
+		System.out.println("MENU PHƯƠNG TIỆN");
+		int chon=0;
+		do {
+			System.out.println("1. Thêm phương tiện ");
+			System.out.println("2. Xóa phương tiện ");
+			System.out.println("3. Sửa phương tiện ");
+			System.out.println("4. Tìm kiếm phương tiện ");
+			System.out.println("5. Xuất danh sách phương tiện ");
+			System.out.println("6. Thoát ");
+			System.out.println("Vui lòng chọn");
+			chon = sc.nextInt();
+			sc.nextLine();
+			switch(chon){
+				case 1:
+					them();
+					break;
+					
+				case 2:
+					xoa();
+					break;
+					
+				case 3 :
+					sua();
+					break;
+					
+				case 4:
+					timKiem();
+					break;
+					
+				case 5:
+					xuat();
+					break;
+				case 6:
+					return;
+					
+				default :
+					System.out.println("Nhập sai !! vui lòng chọn lại ");
+					break;
+			}
+		} while(chon!=0);
 	}
-
-	
-
 }
