@@ -1,5 +1,8 @@
 package com.mycompany.doanoop;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -99,7 +102,6 @@ public class DanhSachThanhVien implements DanhSach{
         System.out.println();
     }
 
-
     public void timKiem() {
         System.out.print("Nhập ID cần tìm:  ");
         String so = sc.nextLine();
@@ -111,8 +113,36 @@ public class DanhSachThanhVien implements DanhSach{
             }
         }
     }
-
-
+    public void ghiFile(){
+        try{
+            FileWriter fw = new FileWriter("data.txt");
+            fw.write(toString());
+            fw.close();
+            System.out.println("Xuất file thành công");
+        }catch (Exception ex){
+            System.out.println(ex);
+        }
+    }
+    public void docFile(){
+        try{
+            BufferedReader input = new BufferedReader(new FileReader("input.txt"));
+            String line = input.readLine();
+            while (line!=null){
+                String[] arr = line.split(",");
+                dstv = Arrays.copyOf(dstv, n+1);
+                if(arr[0].equals("HK")){
+                    dstv[n++] = new HanhKhach(arr[1], arr[2], arr[3], arr[4], arr[5], arr[6],arr[7]);
+                }else {
+                    dstv[n++] = new HuongDanVien(arr[1], arr[2], arr[3], arr[4], arr[5], arr[6],arr[7]);
+                }
+                line = input.readLine();
+            }
+            input.close();
+            System.out.println("Đọc file thành công");
+        }catch (Exception ex) {
+            System.out.println(ex);
+        }
+    }
     public void showMenu() {
         System.out.println("Menu thành viên");
         int chon = 0;
@@ -123,7 +153,9 @@ public class DanhSachThanhVien implements DanhSach{
             System.out.println("3. Xóa thành viên ");
             System.out.println("4. Tìm kiếm thành viên ");
             System.out.println("5. Xuất danh sách thành viên ");
-            System.out.println("6. Thoát ");
+            System.out.println("6. Xuất file danh sách thành viên");
+            System.out.println("7. Thêm danh sách thành viên mới từ file ");
+            System.out.println("8. Thoát ");
             System.out.print("Vui lòng chọn :  ");
             chon = sc.nextInt();
             sc.nextLine();
@@ -144,6 +176,12 @@ public class DanhSachThanhVien implements DanhSach{
                     xuat();
                     break;
                 case 6:
+                    ghiFile();
+                    break;
+                case 7:
+                    docFile();
+                    break;
+                case 8:
                     return;
 
                 default:
@@ -153,12 +191,12 @@ public class DanhSachThanhVien implements DanhSach{
         }while (n!=0);
     }
 
-
+    @Override
     public String toString() {
         String str;
         str = "Danh sách thành viên ";
-        for(int i=0; i<n; i++){
-            str+= "\n\n Thành viên thứ "+(i+1) + ":";
+        for(int i=0; i<dstv.length; i++){
+            str+= "\n\nThành viên thứ "+(i+1) + ":";
             str+= dstv[i].toString();
         }
         return str;

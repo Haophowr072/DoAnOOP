@@ -102,7 +102,7 @@ public class ConNguoi {
     @Override
     public String toString() {
         String str;
-        str = "ID: " + id + "\nHọ tên: " + ten + "\nNgày sinh" + ngaySinh + "\nĐịa chỉ: " + "\nSố điện thoại: " + sdt + "\nCăn cước công dân: " + CCCD;
+        str = "\nID: " + id + "\nHọ tên: " + ten + "\nNgày sinh: " + ngaySinh + "\nĐịa chỉ: " + diaChi +  "\nSố điện thoại: " + sdt + "\nCăn cước công dân: " + CCCD;
         return str;
     }
 }

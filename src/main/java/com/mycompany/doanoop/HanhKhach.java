@@ -53,5 +53,8 @@ public class HanhKhach extends ConNguoi {
         System.out.println("Điểm tích lũy: " + diemTichLuy);
     }
 
-
+    @Override
+    public String toString() {
+        return super.toString() + "\nLoại thành viên: " + loaiTV + "\nĐiểm tích lũy: " + diemTichLuy;
+    }
 }

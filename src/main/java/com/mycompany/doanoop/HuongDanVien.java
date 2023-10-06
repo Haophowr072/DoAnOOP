@@ -47,4 +47,9 @@ public class HuongDanVien extends ConNguoi {
         System.out.println("Nhập ngày vào làm ");
         ngayVaoLam = sc.nextLine();
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\nKinh nghiệm: " + kinhNghiem + "\nNgày vào làm: " + ngayVaoLam;
+    }
 }

@@ -11,9 +11,10 @@ package com.mycompany.doanoop;
 public class Main {
 
     public static void main(String[] args) {
-        ConNguoi[] cn = new ConNguoi[2];
+        ConNguoi[] cn = new ConNguoi[3];
         cn[0] = new HanhKhach("Nguyễn Nhật Hào", "7/2/2002", "Bình Dương", "0123456789", "3336665544", "VIP", "30");
         cn[1] = new HanhKhach("Triệu Võ Thanh Huy", "7/2/2002", "Hồ Chí Minh", "365645854", "778899554", "VIP", "30");
+        cn[2] = new HuongDanVien("Nguyễn Anh Duy", "7/2/2002", "Hồ Chí Minh", "365645854", "778899554", "2 năm", "20/10/2023");
         DanhSachThanhVien dstv = new DanhSachThanhVien(cn, cn.length);
         dstv.showMenu();
 

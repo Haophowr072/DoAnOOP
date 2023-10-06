@@ -6,4 +6,7 @@ public class TourDuLich {
     private String ngayVe;
     private int giaTien;
     private DanhSachThanhVien dstv;
+    private DanhSachPhuongTien dspt;
+    private DanhSachThanhPho dstp;
+
 }
