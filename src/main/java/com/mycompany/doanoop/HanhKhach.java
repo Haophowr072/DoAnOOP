@@ -1,6 +1,10 @@
 package com.mycompany.doanoop;
 
 import java.util.Scanner;
+/**
+ *
+ * @author Hào
+ */
 
 public class HanhKhach extends ConNguoi {
     private String loaiTV;

@@ -113,6 +113,9 @@ public class DanhSachThanhVien implements DanhSach{
             }
         }
     }
+    public void datVe(){
+        
+    }
     public void ghiFile(){
         try{
             FileWriter fw = new FileWriter("data.txt");
@@ -143,6 +146,7 @@ public class DanhSachThanhVien implements DanhSach{
             System.out.println(ex);
         }
     }
+
     public void showMenu() {
         System.out.println("Menu thành viên");
         int chon = 0;

@@ -1,5 +1,8 @@
 package com.mycompany.doanoop;
-
+/**
+ *
+ * @author huy
+ */
 public class TourDuLich {
     private String tenTour;
     private String ngayDi;
@@ -9,4 +12,5 @@ public class TourDuLich {
     private DanhSachPhuongTien dspt;
     private DanhSachThanhPho dstp;
 
+    
 }

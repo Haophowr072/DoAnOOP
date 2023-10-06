@@ -2,6 +2,10 @@ package com.mycompany.doanoop;
 
 import java.util.Scanner;
 
+/**
+ *
+ * @author Hào
+ */
 public class HuongDanVien extends ConNguoi {
     private String kinhNghiem;
     private String ngayVaoLam;
