@@ -24,9 +24,9 @@ public class Main {
         
         
         
-        ThanhPho[] thanhpho = new ThanhPho[2];
-        thanhpho[0]=new ThanhPho("Hồ Chí Minh" , "Nóng", "28" ,"Tiếng Việt");
-        thanhpho[1]=new ThanhPho("Hà Nội" , "Nóng", "29" ,"Tiếng Việt" );
+        ThanhPho[] thanhpho = new ThanhPho[0];
+//        thanhpho[0]=new ThanhPho("Hồ Chí Minh" , "Nóng", "28" ,"Tiếng Việt");
+//        thanhpho[1]=new ThanhPho("Hà Nội" , "Nóng", "29" ,"Tiếng Việt" );
         DanhSachThanhPho pho = new DanhSachThanhPho(thanhpho , thanhpho.length);
         pho.showMenu();
       
