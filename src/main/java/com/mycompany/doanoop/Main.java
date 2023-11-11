@@ -8,7 +8,7 @@ package com.mycompany.doanoop;
  *
  * @author Smilee
  */
-public class DoAnOOP {
+public class Main {
 
     public static void main(String[] args) {
         
