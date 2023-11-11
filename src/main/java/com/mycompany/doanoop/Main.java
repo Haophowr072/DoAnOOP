@@ -32,8 +32,11 @@ public class Main {
 //        pho.xuat();
     	
 //
-    	DanhSachCoSoKinhDoanh dscskd=new DanhSachCoSoKinhDoanh();
-    	dscskd.them();
-    	dscskd.xuat();
+    	CoSoKinhDoanh[] cskd=new CoSoKinhDoanh[2];
+    	cskd[0]= new CoSoKinhDoanh("KS1"," Ngoi Sao","172 ADV","5");
+    	cskd[1]= new CoSoKinhDoanh("NH1"," Phuong Nam","41 PN","6");
+    	DanhSachCoSoKinhDoanh dscskd=new DanhSachCoSoKinhDoanh(cskd,cskd.length);
+
+    	dscskd.showMenu();
     }
 }

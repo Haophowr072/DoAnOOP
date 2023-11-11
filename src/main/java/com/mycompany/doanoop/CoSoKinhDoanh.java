@@ -40,6 +40,12 @@ public class CoSoKinhDoanh {
 		this.sao = sao;
 	}
 	
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
 	public void nhap()
 	{
 		Scanner sc= new Scanner(System.in);
@@ -57,7 +63,7 @@ public class CoSoKinhDoanh {
 		System.out.println("ID: " + id);
 		System.out.println("Ten: " + ten);
 		System.out.println("Dia chi: " + diaChi);
-		System.out.println("Ten: " + sao);
+		System.out.println("Sao: " + sao);
 
 		
 	}
