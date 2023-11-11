@@ -49,6 +49,8 @@ public class DanhSachPhuongTien implements DanhSach {
 				soLuongpt--;
 				return;
 			}
+			System.out.println("Không tìm thấy phương tiện"  );
+			System.out.println();
 			
 		}
 		
@@ -61,23 +63,51 @@ public class DanhSachPhuongTien implements DanhSach {
 		String bienso =sc.nextLine();
 		for(int i=0; i<soLuongpt ; i++) {
 			if(dspt[i].getBienKiemSoat().equals(bienso)) {
-				dspt[i].nhap();
+				System.out.println("1.Sửa biển số xe");
+				System.out.println("2.Sửa số chỗ ngồi");
+				System.out.println("3.Sửa loại phương tiện");
+				System.out.println("Chọn thông tin cần sửa");
+				
+				int so =sc.nextInt();
+				sc.nextLine();
+				switch (so) {
+					case 1 :
+						System.out.print("Nhập: ");
+						String bienkiemsoat = sc.nextLine();
+						dspt[i].setBienKiemSoat(bienkiemsoat);
+						break;
+					case 2 :
+						System.out.print("Nhập: ");
+						int sochoNgoi = sc.nextInt();
+						sc.nextLine();
+						dspt[i].setSoChoNgoi(sochoNgoi);
+						break;
+					case 3 :
+						System.out.print("Nhập: ");
+						String loaiPhuongTien = sc.nextLine();
+						dspt[i].setLoaiPhuongTien(loaiPhuongTien);;
+						break;
+						
+				}
 				System.out.println("Sửa thành công");
 				return;
 			}
 		}
+		System.out.println("Không tìm thấy phương tiện"  );
+		System.out.println();
 	}
 
 	public void timKiem() {
-		xuat();
 		System.out.println("Nhập biển số xe cần tìm ");
-		String bienso = sc.nextLine();
+		String timKiem = sc.nextLine();
 		for(int i=0 ; i<soLuongpt ; i++) {
-			if(dspt[i].getBienKiemSoat().equals(bienso)) {
+			if(dspt[i].getBienKiemSoat().equals(timKiem) ) {
 				dspt[i].xuat();
 				return;
 			}
 		}
+		System.out.println("Không tìm thấy phương tiện"  );
+		System.out.println();
 		
 		
 	}

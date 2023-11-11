@@ -8,5 +8,4 @@ public interface DanhSach {
 	public abstract void showMenu();
 	public abstract void xuat();
 	
-
 }

@@ -48,10 +48,13 @@ public class DanhSachThanhPho implements DanhSach{
 					dstp = Arrays.copyOf( dstp, soLuongtp-1) ;
 				}
 				System.out.println("Xóa thành công");
+				System.out.println();	
 				soLuongtp--;
 				return;
 			}
 		}
+		System.out.println("Không tìm thấy thành phố"  );
+		System.out.println();
 		
 	}
 
@@ -68,7 +71,10 @@ public class DanhSachThanhPho implements DanhSach{
 				return;
 			}
 		}
+		System.out.println("Không tìm thấy thành phố"  );
+		System.out.println();
 	}
+	
 
 
 	@Override
@@ -81,15 +87,13 @@ public class DanhSachThanhPho implements DanhSach{
 			return;
 			}
 		}
+		System.out.println("Không tìm thấy thành phố"  );
+		System.out.println();
 		
 	}
 
 
 	@Override
-	
-
-
-
 	public void xuat() {
 		if(dstp.length==0) {
 			System.out.println("Danh sach phuong tien trong ");
@@ -102,8 +106,6 @@ public class DanhSachThanhPho implements DanhSach{
 				System.out.println("Khí hậu : "+ dstp[i].getKhiHau());
 				System.out.println("Nhiệt độ : "+ dstp[i].getNhietDo());
 				System.out.println("Ngôn ngữ : "+ dstp[i].getNgonNgu());
-				System.out.println("Ngày đến : "+ dstp[i].getNgayDen());
-				System.out.println("Ngày đi: "+ dstp[i].getNgayDi());
 				System.out.println();
 			}
 		}
