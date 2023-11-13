@@ -114,7 +114,18 @@ public class DanhSachThanhVien implements DanhSach{
         }
     }
     public void datVe(){
-        
+        System.out.println ("\n------------Nhập thông tin thành viên---------------");
+        System.out.print("Nhập số lượng thành viên muốn nhập: ");
+        int k = sc.nextInt();
+        dstv = Arrays.copyOf(dstv,n+k);
+        for (int i=0;i<k;i++)
+        {
+            dstv[n+i]= new HanhKhach();
+            dstv[n+i].nhap();
+            System.out.println();
+        }
+        n+=k;
+        System.out.println("-------------Đặt thành công-----------\n");
     }
     public void ghiFile(){
         try{
