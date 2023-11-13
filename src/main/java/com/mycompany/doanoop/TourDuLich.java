@@ -12,5 +12,5 @@ public class TourDuLich {
     private DanhSachPhuongTien dspt;
     private DanhSachThanhPho dstp;
 
-    
+
 }

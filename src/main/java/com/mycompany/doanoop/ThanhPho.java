@@ -10,26 +10,22 @@ public class ThanhPho {
       private String khiHau;
       private String nhietDo;
       private String ngonNgu;
-      private String ngayDen;
-      private String ngayDi;
-      
+
     public ThanhPho() {
     	this.ten = "";
 		this.khiHau = "";
 		this.nhietDo = "";
 		this.ngonNgu = "";
-		this.ngayDen = "";
-		this.ngayDi = "";
+		
     }
     
    
-	public ThanhPho(String ten, String khiHau, String nhietDo, String ngonNgu, String ngayDen, String ngayDi) {
+	public ThanhPho(String ten, String khiHau, String nhietDo, String ngonNgu) {
 		this.ten = ten;
 		this.khiHau = khiHau;
 		this.nhietDo = nhietDo;
 		this.ngonNgu = ngonNgu;
-		this.ngayDen = ngayDen;
-		this.ngayDi = ngayDi;
+		
 	}
 	
 
@@ -65,21 +61,6 @@ public class ThanhPho {
 		this.ngonNgu = ngonNgu;
 	}
 
-	public String getNgayDen() {
-		return ngayDen;
-	}
-
-	public void setNgayDen(String ngayDen) {
-		this.ngayDen = ngayDen;
-	}
-
-	public String getNgayDi() {
-		return ngayDi;
-	}
-
-	public void setNgayDi(String ngayDi) {
-		this.ngayDi = ngayDi;
-	}
 	
 	public void nhap () {
 		Scanner sc = new Scanner(System.in);
@@ -91,10 +72,6 @@ public class ThanhPho {
 		nhietDo = sc.nextLine();
 		System.out.println("Nhập ngôn ngữ");
 		ngonNgu = sc.nextLine();
-		System.out.println("Nhập ngày đến : ");
-		ngayDen = sc.nextLine();
-		System.out.println("Nhập ngày đi : ");
-		ngayDi = sc.nextLine();
 	}
       
      public void xuat () {
@@ -102,8 +79,6 @@ public class ThanhPho {
     	 System.out.println(" Khí hậu là : " + khiHau);
     	 System.out.println(" Nhiệt độ là : " + nhietDo);
     	 System.out.println(" Ngôn ngữ  : " + ngonNgu);
-    	 System.out.println(" Ngày đến : " + ngayDen);
-    	 System.out.println(" Ngày đi  : " + ngayDi);
      }
 	
 
