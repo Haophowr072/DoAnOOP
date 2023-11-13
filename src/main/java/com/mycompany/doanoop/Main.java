@@ -19,11 +19,6 @@ public class Main {
         phuongtien[3]= new PhuongTien("66666", 2 , "xe máy" );
         phuongtien[4]= new PhuongTien("11111", 2 , "xe máy" );
         DanhSachPhuongTien danhsach = new DanhSachPhuongTien(phuongtien , phuongtien.length);  
-       
-
-        ThanhPho[] thanhpho = new ThanhPho[2];
-        thanhpho[0]=new ThanhPho("Hồ Chí Minh" , "Nóng", "28" ,"Tiếng Việt");
-        thanhpho[1]=new ThanhPho("Hà Nội" , "Nóng", "29" ,"Tiếng Việt" );
         DanhSachThanhPho pho = new DanhSachThanhPho(thanhpho , thanhpho.length);
         pho.showMenu();
 

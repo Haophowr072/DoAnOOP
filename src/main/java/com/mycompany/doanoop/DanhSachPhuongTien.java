@@ -92,7 +92,9 @@ public class DanhSachPhuongTien implements DanhSach {
 						break;
 						
 				}
-				System.out.println("Sửa thành công");
+				System.out.println("=================================");
+				System.out.println("========= Sửa thành công ========");
+				System.out.println("=================================");
 				return;
 			}
 		}
