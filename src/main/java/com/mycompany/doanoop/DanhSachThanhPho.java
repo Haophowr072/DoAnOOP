@@ -56,7 +56,8 @@ public class DanhSachThanhPho implements DanhSach{
 				return;
 			}
 		}
-		System.out.println("Không tìm thấy thành phố"  );
+		System.out.println("==================================" );
+		System.out.println("=====Không tìm thấy thành phố====="  );
 		System.out.println();
 		
 	}
