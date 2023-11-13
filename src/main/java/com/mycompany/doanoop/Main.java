@@ -10,21 +10,21 @@ public class Main {
 		TourDuLich tdl[] = new TourDuLich[5];
 		//Co so kinh doanh
 		CoSoKinhDoanh cskd1[] = new CoSoKinhDoanh[3];
-		cskd1[0] = new NhaHang("Tan Phan","440 Pham Van Thuan, Bien Hoa, Dong Nai","4 Sao","Gia Dinh 4 Nguoi","23/12/2021",500000);
-		cskd1[1] = new NhaHang("Doan Quy","563 Tan Mai, Bien Hoa, Dong Nai","5 Sao","Mot Nguoi","24/12/2021",120000);
-		cskd1[2] = new KhachSan("Cat Tuong","220 binh Da, Bien Hoa, Dong Nai","4 Sao","23/12/2021","24/12/2021",400000);
+		cskd1[0] = new NhaHang("Memory Đà Lạt","24B đường Hùng Vương, Phường 10, Tp Đà Lạt","4 Sao","Gia Dinh 4 Nguoi","24/11/2023",500000);
+		cskd1[1] = new NhaHang("The Thai Cuisine","74 Yersin, phường 10, TP Đà Lạt","5 Sao","Mot Nguoi","24/11/2023",120000);
+		cskd1[2] = new KhachSan("De La Sol Villa Đà Lạt","91 Đường Hùng Vương, Phường 11, Đà Lạt","3 Sao","23/11/2023","26/11/2023",400000);
 		DanhSachCoSoKinhDoanh dscskd1 = new DanhSachCoSoKinhDoanh(cskd1,cskd1.length);
 
 		ThanhPho tp1[] = new ThanhPho[1];
-		tp1[0] = new ThanhPho("Bien Hoa","Nhiet Doi Gio Mua","30 doC","Tieng Viet");
+		tp1[0] = new ThanhPho("TP. Đà Lạt","Lạnh","16 doC","Tiếng việt");
 		DanhSachThanhPho dstp1 = new DanhSachThanhPho(tp1,tp1.length);
 
 		ConNguoi[] cn1 = new ConNguoi[5];
-		cn1[0] = new HanhKhach("Nguyen Hoang","11/10/1998","Ho Chi Minh","0987654321","985161635","VIP","18");
-		cn1[1] = new HanhKhach("Hoang Thanh","18/02/1995","Ha Noi","0987654123","231551623","TV","10");
-		cn1[2] = new HanhKhach("Thanh Nguyen","16/04/1993","Ha Noi","0987665544","526846231","TV","12");
-		cn1[3] = new HanhKhach("Nguyen Tran","28/09/1994","Ho Chi Minh","0988877755","135186486","VIP","14");
-		cn1[4] = new HuongDanVien("Trung Tran","12/03/1989","Ho Chi Minh","0923456789","21616556","3 nam","12/03/1986");
+		cn1[0] = new HanhKhach("Nguyễn Hoàng","11/10/1998","Ho Chi Minh","0987654321","985161635","VIP","18");
+		cn1[1] = new HanhKhach("Hoàng Thanh","18/02/1995","Ha Noi","0987654123","231551623","TV","10");
+		cn1[2] = new HanhKhach("Thành Nguyễn","16/04/1993","Ha Noi","0987665544","526846231","TV","12");
+		cn1[3] = new HanhKhach("Nguyễn Trân","28/09/1994","Ho Chi Minh","0988877755","135186486","VIP","14");
+		cn1[4] = new HuongDanVien("Trung Trần","12/03/1989","Ho Chi Minh","0923456789","21616556","3 nam","12/03/1986");
 		DanhSachThanhVien dstv1 = new DanhSachThanhVien(cn1,cn1.length);
 
 		PhuongTien pt1[] = new PhuongTien[2];
@@ -129,29 +129,29 @@ public class Main {
 		DanhSachCoSoKinhDoanh dscskd5 = new DanhSachCoSoKinhDoanh(cskd5,cskd5.length);
 
 		ThanhPho tp5[] = new ThanhPho[1];
-		tp5[0] = new ThanhPho("Da Nang","Nhiet Doi Gio Mua","30 doC","Tieng Viet, Tieng Anh");
+		tp5[0] = new ThanhPho("Đà nẵng","Nhiệt đới gió mùa","30 doC","Tiếng Việt, Tiếng Anh");
 		DanhSachThanhPho dstp5 = new DanhSachThanhPho(tp5,tp5.length);
 
 		ConNguoi[] cn5 = new ConNguoi[9];
-		cn5[0] = new HanhKhach("Phat Thanh","18/03/1997","Ho Chi Minh","0987653698","98511204","TV","16");
-		cn5[1] = new HanhKhach("Kieu Trung","24/02/1993","Ha Noi","0987695697","231558971","TV","08");
-		cn5[2] = new HanhKhach("Thai Nguyen","24/04/1993","Ha Noi","0987648465","526848910","TV","12");
-		cn5[3] = new HanhKhach("Doan Truong","27/02/1997","Ho Chi Minh","0988879870","135189314","VIP","23");
-		cn5[4] = new HanhKhach("Tan Nguyen","11/05/1996","Ho Chi Minh","0987655670","985166931","VIP","21");
-		cn5[5] = new HanhKhach("Hoang Tan","18/12/1994","Ha Noi","0987652583","231554762","TV","01");
+		cn5[0] = new HanhKhach("Phát Thanh","18/03/1997","Ho Chi Minh","0987653698","98511204","TV","16");
+		cn5[1] = new HanhKhach("Kiều Trung","24/02/1993","Ha Noi","0987695697","231558971","TV","08");
+		cn5[2] = new HanhKhach("Thái Nguyên","24/04/1993","Ha Noi","0987648465","526848910","TV","12");
+		cn5[3] = new HanhKhach("Đoàn Trường","27/02/1997","Ho Chi Minh","0988879870","135189314","VIP","23");
+		cn5[4] = new HanhKhach("Tân Nguyễn","11/05/1996","Ho Chi Minh","0987655670","985166931","VIP","21");
+		cn5[5] = new HanhKhach("Hoàng Tân","18/12/1994","Ha Noi","0987652583","231554762","TV","01");
 		cn5[6] = new HanhKhach("Thanh Nam","16/04/2000","Ha Noi","0987660138","526848901","TV","18");
-		cn5[7] = new HanhKhach("Nam Thanh","28/12/1994","Ho Chi Minh","0988879999","135187744","VIP","17");
-		cn5[8] = new HuongDanVien("Nguyen Tra","26/07/1990","Ho Chi Minh","0976531144","156187964","2 nam","29/07/1988");
+		cn5[7] = new HanhKhach("Nam Thành","28/12/1994","Ho Chi Minh","0988879999","135187744","VIP","17");
+		cn5[8] = new HuongDanVien("Nguyễn Trà","26/07/1990","Ho Chi Minh","0976531144","156187964","2 nam","29/07/1988");
 		DanhSachThanhVien dstv5 = new DanhSachThanhVien(cn5,cn5.length);
 
 		PhuongTien pt5[] = new PhuongTien[4];
-		pt5[0] = new PhuongTien("MH102",120,"May bay");
-		pt5[1] = new PhuongTien("Vietjack201",80,"May bay");
-		pt5[2] = new PhuongTien("BV-532193.TS",32,"Tau thuy");
-		pt5[3] = new PhuongTien("20A-60213",4,"Xe hoi");
+		pt5[0] = new PhuongTien("MH102",120,"Máy bay");
+		pt5[1] = new PhuongTien("Vietjack201",80,"Máy bay");
+		pt5[2] = new PhuongTien("BV-532193.TS",32,"Tàu thủy");
+		pt5[3] = new PhuongTien("20A-60213",4,"Xe hơi");
 		DanhSachPhuongTien dspt5 = new DanhSachPhuongTien(pt5,pt5.length);
 
-		tdl[4] = new TourDuLich("Nui ngu hanh son","08/12/2021","10/12/2021",13950000,dstv5,dspt5,dstp5,dscskd5);
+		tdl[4] = new TourDuLich("Núi ngũ hành sơn","08/12/2023","10/12/2023",13950000,dstv5,dspt5,dstp5,dscskd5);
 
 		DanhSachTourDuLich dstdl = new DanhSachTourDuLich(tdl,tdl.length);
 		dstdl.showMenu();
