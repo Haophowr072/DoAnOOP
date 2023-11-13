@@ -2,7 +2,10 @@ package com.mycompany.doanoop;
 
 import java.util.Arrays;
 import java.util.Scanner;
-
+/**
+ *
+ * @author huy
+ */
 public class DanhSachPhuongTien implements DanhSach {
 	private PhuongTien dspt[];
 	private int soLuongpt ;
