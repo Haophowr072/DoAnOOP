@@ -61,15 +61,12 @@ public class NhaHang extends CoSoKinhDoanh {
 		giaCombo=sc.nextInt();
 				
 	}
-	
-	public void xuat()
-	{
+
+	public void xuat() {
 		super.xuat();
 		System.out.println("Ngay: " + ngay);
 		System.out.println("Combo: " + combo);
 		System.out.println("Gia combo: " + giaCombo);
-
-		
 	}
 	
 }

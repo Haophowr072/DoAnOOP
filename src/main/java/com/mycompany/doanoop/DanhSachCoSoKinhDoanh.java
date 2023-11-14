@@ -164,7 +164,7 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 		
 	}
 
-	@Override
+
 	public void xuat() {
 		System.out.println("Danh sach cskd");
 		for(int i=0;i<n;i++)

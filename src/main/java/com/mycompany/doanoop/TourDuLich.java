@@ -98,7 +98,6 @@ public class TourDuLich {
         System.out.println("2. Chỉnh sửa cơ sở kinh doanh");
         System.out.println("3. Chỉnh sửa thành viên");
         System.out.println("4. Chỉnh sửa phương tiện");
-        System.out.println("5. Xuất tour du lịch");
         System.out.println("0. Thoát");
         System.out.printf("Vui lòng chọn:");
         switch (sc.nextInt()){
@@ -115,9 +114,6 @@ public class TourDuLich {
                 break;
             case 4:
                 chinhSuaPT();
-                break;
-            case 5:
-                xuat();
                 break;
             default:
                 System.out.println("Nhập sai vui lòng nhập lại");

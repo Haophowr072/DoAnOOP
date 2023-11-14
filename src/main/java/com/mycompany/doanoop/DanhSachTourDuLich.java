@@ -28,7 +28,13 @@ public class DanhSachTourDuLich implements DanhSach {
     }
 
     public void sua() {
-
+        System.out.println("Danh sách tour: ");
+        for(int i=0; i<tdl.length; i++){
+            System.out.println("Tour thứ " + (i+1)+ ":" + tdl[i].getTenTour());
+        }
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Bạn muốn sửa tour thứ ");
+        tdl[sc.nextInt()-1].showMenu();
     }
 
 

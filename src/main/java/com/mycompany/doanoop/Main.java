@@ -1,6 +1,8 @@
 
 package com.mycompany.doanoop;
 
+import java.util.Scanner;
+
 /**
  * @author Hào
  */
@@ -154,7 +156,47 @@ public class Main {
 		tdl[4] = new TourDuLich("Núi ngũ hành sơn","08/12/2023","10/12/2023",13950000,dstv5,dspt5,dstp5,dscskd5);
 
 		DanhSachTourDuLich dstdl = new DanhSachTourDuLich(tdl,tdl.length);
-		dstdl.showMenu();
+		DanhSachThanhVien dstv = new DanhSachThanhVien();
+		DanhSachPhuongTien dspt = new DanhSachPhuongTien();
+		DanhSachThanhPho dstp = new DanhSachThanhPho();
+		DanhSachCoSoKinhDoanh dscskd = new DanhSachCoSoKinhDoanh();
 
-    }
+
+		Scanner sc = new Scanner(System.in);
+		int x = 0;
+		do {
+			System.out.println("==============Menu Danh Sach Tour Du Lich ===============");
+			System.out.println("1. Quản lý tour du lịch");
+			System.out.println("2. Quản lý thành viên");
+			System.out.println("3. Quản lý thành phố");
+			System.out.println("4. Quản lý cơ sở kinh doanh");
+			System.out.println("5. Quản lý phương tiện");
+			System.out.println("0. Thoát");
+			System.out.print("Vui lòng chọn: ");
+			x  = sc.nextInt();
+			switch (x) {
+				case 0:
+					return;
+				case 1:
+					dstdl.showMenu();
+					break;
+				case 2:
+					dstv.showMenu();
+					break;
+				case 3:
+					dstp.showMenu();
+					break;
+				case 4:
+					dscskd.showMenu();
+					break;
+				case 5:
+					dspt.showMenu();
+					break;
+				default:
+					System.out.println("Nhập sai vui lòng nhập lại: ");
+					break;
+			}
+		} while (x != 0);
+	}
+
 }
