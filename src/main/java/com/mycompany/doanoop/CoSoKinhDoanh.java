@@ -65,7 +65,6 @@ public class CoSoKinhDoanh {
 		System.out.println("Dia chi: " + diaChi);
 		System.out.println("Sao: " + sao);
 
-		
 	}
 	
 
