@@ -69,7 +69,6 @@ public class NhaHang extends CoSoKinhDoanh {
 		System.out.println("Combo: " + combo);
 		System.out.println("Gia combo: " + giaCombo);
 
-		
 	}
 	
 }

@@ -164,18 +164,31 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 		
 	}
 
-	@Override
+
 	public void xuat() {
-		System.out.println("Danh sach cskd");
-		for(int i=0;i<n;i++)
-		{
-			cskd[i].xuat();
-			System.out.println();
-		}
-		
+		xuatNhaHang();
+		xuatKhachSan();
 	}
-	
-	
-	
+
+
+	public void xuatNhaHang() {
+		System.out.println("Danh sach cskd");
+		for(int i=0;i<n;i++) {
+			if (cskd[i] instanceof NhaHang) {
+				cskd[i].xuat();
+			}
+		}
+	}
+
+	public void xuatKhachSan() {
+		System.out.println("Danh sach cskd");
+		for (int i = 0; i < n; i++) {
+			if (cskd[i] instanceof KhachSan) {
+				cskd[i].xuat();
+			}
+		}
+
+
+	}
 	
 }
