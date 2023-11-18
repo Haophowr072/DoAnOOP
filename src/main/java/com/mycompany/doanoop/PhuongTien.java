@@ -68,4 +68,10 @@ public class PhuongTien {
         System.out.println("Số chỗ ngồi  : " + soChoNgoi );
         System.out.println("Loại phương tiện : " + loaiPhuongTien );
     }
+    
+    public String toString() {
+		return "\n Biển kiểm soát : " + bienKiemSoat + "\n Số chỗ ngồi " + soChoNgoi + "\n Loại phương tiện " + loaiPhuongTien  ;
+	}
 }
+
+
