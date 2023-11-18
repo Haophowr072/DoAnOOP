@@ -21,8 +21,8 @@ public class KhachSan extends CoSoKinhDoanh {
 	
 	
 	
-	public KhachSan(String ngayDen, String ngayDi, int donGia) {
-		super(idKS());
+	public KhachSan( String ten,String diaChi,String sao, String ngayDen, String ngayDi, int donGia) {
+		super(idKS(), ten, diaChi, sao);
 		this.ngayDen = ngayDen;
 		this.ngayDi = ngayDi;
 		this.donGia = donGia;

@@ -6,7 +6,7 @@ public class NhaHang extends CoSoKinhDoanh {
 	private String id;
 	private String ngay;
 	private String combo;
-	private String giaCombo;
+	private int giaCombo;
 	
 	public static int idNH =1;
 	public static String idNH() {
@@ -18,8 +18,8 @@ public class NhaHang extends CoSoKinhDoanh {
 		super(idNH());
 	}
 
-	public NhaHang(String ngay, String combo, String giaCombo) {
-		super(idNH());
+	public NhaHang( String ten,String diaChi,String sao, String ngay, String combo, int giaCombo) {
+		super(idNH(), ten, diaChi, sao);
 		this.ngay = ngay;
 		this.combo = combo;
 		this.giaCombo = giaCombo;
@@ -41,11 +41,11 @@ public class NhaHang extends CoSoKinhDoanh {
 		this.combo = combo;
 	}
 
-	public String getGiaCombo() {
+	public int getGiaCombo() {
 		return giaCombo;
 	}
 
-	public void setGiaCombo(String giaCombo) {
+	public void setGiaCombo(int giaCombo) {
 		this.giaCombo = giaCombo;
 	}
 	
@@ -58,7 +58,7 @@ public class NhaHang extends CoSoKinhDoanh {
 		System.out.println("Nhap combo:");
 		combo=sc.nextLine();
 		System.out.println("Nhap gia combo:");
-		giaCombo=sc.nextLine();
+		giaCombo=sc.nextInt();
 				
 	}
 	
