@@ -67,6 +67,12 @@ public class CoSoKinhDoanh {
 
 		
 	}
+	@Override
+    public String toString() {
+        String str;
+        str = "\nID: " + id + "\nHọ tên: " + ten + "\nĐịa chỉ: " + diaChi + "\nĐịa chỉ: " + diaChi +  "\nSao: " + sao ;
+        return str;
+    }
 	
 
 }

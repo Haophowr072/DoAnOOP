@@ -72,4 +72,9 @@ public class NhaHang extends CoSoKinhDoanh {
 		
 	}
 	
+	 @Override
+	    public String toString() {
+	        return super.toString() + "\nNgày: " + ngay + "\nCombo: " + combo +"\nGía combo: "+ giaCombo;
+	    }
+	
 }

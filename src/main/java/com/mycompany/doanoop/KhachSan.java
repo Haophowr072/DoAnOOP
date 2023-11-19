@@ -72,5 +72,9 @@ public class KhachSan extends CoSoKinhDoanh {
 
 		
 	}
+	 @Override
+	    public String toString() {
+	        return super.toString() + "\nNgày đến: " + ngayDen + "\nNgày đi: " + ngayDi +"\nĐơn giá: "+ donGia;
+	    }
 }
 
