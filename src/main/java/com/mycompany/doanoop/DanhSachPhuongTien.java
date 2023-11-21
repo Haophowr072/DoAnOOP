@@ -134,6 +134,18 @@ public class DanhSachPhuongTien implements DanhSach {
 		
 	}
 	
+	@Override
+	public String toString() {
+		String str;
+		str ="Danh sách phương tiện";
+		for(int i=0;i<dspt.length; i++) {
+			str+="\n\n Phương tiện thứ "+ (i+1) + "." ;
+			str+=dspt[i].toString();
+		}
+		return str;
+	}
+	
+	
 	public void showMenu() {
 		System.out.println("MENU PHƯƠNG TIỆN");
 		int chon=0;

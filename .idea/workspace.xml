@@ -11,6 +11,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/DanhSachTourDuLich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/DanhSachTourDuLich.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/TourDuLich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/TourDuLich.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/NhaHang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/NhaHang.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +55,19 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "duy",
+    "last_opened_file_path": "D:/Workspace/Java/OOP/DoAnOOP",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true" them-toString-cho-pt-va-tp
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

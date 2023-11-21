@@ -80,6 +80,12 @@ public class ThanhPho {
     	 System.out.println(" Nhiệt độ là : " + nhietDo);
     	 System.out.println(" Ngôn ngữ  : " + ngonNgu);
      }
+
+
+	@Override
+	public String toString() {
+		return "\n Thành Phố : " + ten + "\n Khí hậu " + khiHau + "\n Nhiệt độ " + nhietDo + "\n Ngôn ngữ " + ngonNgu ;
+	}
 	
 
 	}

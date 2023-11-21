@@ -146,6 +146,17 @@ public class DanhSachThanhPho implements DanhSach{
 		
 	}
 	
+	@Override
+	public String toString() {
+		String str;
+		str ="Danh sách thành phố";
+		for(int i=0;i<dstp.length; i++) {
+			str+="\n\n Thành phố  "+ (i+1) + "." ;
+			str+=dstp[i].toString();
+		}
+		return str;
+	}
+	
 	public void showMenu() {
 		System.out.println("MENU THÀNH PHỐ");
 		int chon=0;
