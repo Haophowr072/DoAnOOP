@@ -43,7 +43,7 @@ public class DanhSachThanhVien implements DanhSach{
                 break;
         }
     }
-
+    @Override
     public void xuat() {
         System.out.println("Danh sách thành viên ");
         for(int i=0; i<n; i++){
@@ -122,6 +122,7 @@ public class DanhSachThanhVien implements DanhSach{
         {
             dstv[n+i]= new HanhKhach();
             dstv[n+i].nhap();
+
             System.out.println();
         }
         n+=k;

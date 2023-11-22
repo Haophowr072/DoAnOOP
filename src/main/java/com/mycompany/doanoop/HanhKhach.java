@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class HanhKhach extends ConNguoi {
     private String loaiTV;
     private String diemTichLuy;
+    private static String tourDat = "";
     private static int idHKCur = 1;
 
     public HanhKhach() {
@@ -41,7 +42,6 @@ public class HanhKhach extends ConNguoi {
     public void setDiemTichLuy(String diemTichLuy) {
         this.diemTichLuy = diemTichLuy;
     }
-
     public void nhap(){
         super.nhap();
         Scanner sc = new Scanner(System.in);
@@ -55,10 +55,11 @@ public class HanhKhach extends ConNguoi {
         super.xuat();
         System.out.println("Loại thành viên: " + loaiTV);
         System.out.println("Điểm tích lũy: " + diemTichLuy);
+        System.out.println("Tour đã đặt: " + tourDat);
     }
 
     @Override
     public String toString() {
-        return super.toString() + "\nLoại thành viên: " + loaiTV + "\nĐiểm tích lũy: " + diemTichLuy;
+        return super.toString() + "\nLoại thành viên: " + loaiTV + "\nĐiểm tích lũy: " + diemTichLuy + "\nTour đã đặt: " + tourDat;
     }
 }

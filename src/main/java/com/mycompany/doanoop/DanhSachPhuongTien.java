@@ -12,7 +12,7 @@ public class DanhSachPhuongTien implements DanhSach {
 	Scanner sc = new Scanner(System.in);
 	
 	public DanhSachPhuongTien() {
-		int soLuongpt = 0;
+		soLuongpt = 0;
 		dspt = new PhuongTien[0];
 	}
 
@@ -119,10 +119,10 @@ public class DanhSachPhuongTien implements DanhSach {
 
 	public void xuat() {
 		if(dspt.length==0) {
-			System.out.println("Danh sach phuong tien trong ");
+			System.out.println("Danh sách phương tiện trống ");
 		}
 		else {
-			System.out.println("Danh sach phuong tien ");
+			System.out.println("Danh sách phương tiện ");
 			for(int i = 0 ; i<soLuongpt ; i++) {
 				System.out.println("Phuong tien thu  "  + (i+1) + " : ");
 				System.out.println("Phuong tien co bien so xe : "+ dspt[i].getBienKiemSoat());

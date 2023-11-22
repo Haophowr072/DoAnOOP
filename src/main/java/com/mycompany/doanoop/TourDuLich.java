@@ -93,7 +93,7 @@ public class TourDuLich {
 
     public void showMenu(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("===================Menu quản lý tour du lịch====================");
+        System.out.println("===================Menu chỉnh sửa tour du lịch====================");
         System.out.println("1. Chỉnh sửa thành phố");
         System.out.println("2. Chỉnh sửa cơ sở kinh doanh");
         System.out.println("3. Chỉnh sửa thành viên");
