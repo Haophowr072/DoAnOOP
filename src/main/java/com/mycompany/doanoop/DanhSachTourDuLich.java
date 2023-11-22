@@ -52,6 +52,16 @@ public class DanhSachTourDuLich implements DanhSach {
         tdl[sc.nextInt()-1].xuat();
     }
 
+    public void xuatAll(){
+        System.out.println("*************************************************");
+        System.out.println("===========Danh sách tour du lịch===============");
+        for(int i=0;i<tdl.length;i++){
+            System.out.println("Tour " + (i+1) + ": ");
+            tdl[i].xuat();
+            System.out.println("\n*************************************************");
+        }
+    }
+
     public void datVe(){
         System.out.println("\n-------Danh sách tour");
         for(int i=0;i<tdl.length;i++){
@@ -77,7 +87,7 @@ public class DanhSachTourDuLich implements DanhSach {
             System.out.println("3. Xóa tour");
             System.out.println("4. Tìm kiếm tour");
             System.out.println("5. Chi tiết tour du lịch");
-            System.out.println("6. Xuất file danh sách tour");
+            System.out.println("6. Xuất tất cả danh sách tour");
             System.out.println("7. Đặt vé tour ");
             System.out.println("0. Thoát");
             System.out.print("Vui lòng chọn: ");
@@ -101,7 +111,7 @@ public class DanhSachTourDuLich implements DanhSach {
                     xuat();
                     break;
                 case 6:
-//                    ghiFile();
+                    xuatAll();
                     break;
                 case 7:
                     datVe();
