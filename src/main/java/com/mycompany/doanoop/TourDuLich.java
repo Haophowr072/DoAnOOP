@@ -11,6 +11,7 @@ public class TourDuLich {
     private String ngayDi = "";
     private String ngayVe = "";
     private int giaTien = 0;
+    private String nguoiDat="";
     private DanhSachThanhVien dstv;
     private DanhSachPhuongTien dspt;
     private DanhSachThanhPho dstp;
@@ -24,11 +25,12 @@ public class TourDuLich {
         dstv = new DanhSachThanhVien();
     }
 
-    public TourDuLich(String tenTour, String ngayDi, String ngayVe, int giaTien, DanhSachThanhVien dstv, DanhSachPhuongTien dspt, DanhSachThanhPho dstp, DanhSachCoSoKinhDoanh dscskd) {
+    public TourDuLich(String tenTour, String ngayDi, String ngayVe, int giaTien, String nguoiDat, DanhSachThanhVien dstv, DanhSachPhuongTien dspt, DanhSachThanhPho dstp, DanhSachCoSoKinhDoanh dscskd) {
         this.tenTour = tenTour;
         this.ngayDi = ngayDi;
         this.ngayVe = ngayVe;
         this.giaTien = giaTien;
+        this.nguoiDat=nguoiDat;
         this.dstv = dstv;
         this.dspt = dspt;
         this.dstp = dstp;
@@ -77,13 +79,14 @@ public class TourDuLich {
         dscskd.xuat();
         dstp.xuat();
         dspt.xuat();
+        System.out.println("Người đặt vé: " + nguoiDat);
         System.out.println("------Giá tour: " + giaTien + "VND");
     }
 
     @Override
     public String toString(){
         String str = "Tên tour: " + tenTour + "\nNgày: " + ngayDi + " ~ " + ngayVe + "\n";
-        str += dstv.toString() + dscskd.toString() + dstp.toString() + dspt.toString() + "\n------Giá tour: " + giaTien + "\n";
+        str += dstv.toString() + dscskd.toString() + dstp.toString() + dspt.toString() + "\nNgười đặt vé: " + nguoiDat + "\n------Giá tour: " + giaTien + "\n";
         return str;
     }
 

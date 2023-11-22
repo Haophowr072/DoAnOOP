@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b24504c4-5806-41c2-96ae-3e766f26c13b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/DanhSachPhuongTien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/DanhSachPhuongTien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/DanhSachThanhVien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/DanhSachThanhVien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/HanhKhach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/HanhKhach.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/DanhSachTourDuLich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/DanhSachTourDuLich.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/TourDuLich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/TourDuLich.java" afterDir="false" />
     </list>
@@ -34,7 +32,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "them-class-quan-ly-phan-mem",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -49,7 +47,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700628525752</updated>
-      <workItem from="1700628529168" duration="3142000" />
+      <workItem from="1700628529168" duration="5598000" />
     </task>
     <servers />
   </component>

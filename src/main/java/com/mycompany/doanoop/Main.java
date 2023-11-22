@@ -36,7 +36,7 @@ public class Main {
 		pt1[1] = new PhuongTien("51A-28888", 4, "Xe hoi");
 		DanhSachPhuongTien dspt1 = new DanhSachPhuongTien(pt1, pt1.length);
 
-		tdl[0] = new TourDuLich("Buu Long", "23/12/2021", "24/12/2021", 9890000, dstv1, dspt1, dstp1, dscskd1);
+		tdl[0] = new TourDuLich("Buu Long", "23/12/2021", "24/12/2021", 9890000, "Nguyễn Hoàng", dstv1, dspt1, dstp1, dscskd1);
 
 
 		CoSoKinhDoanh cskd2[] = new CoSoKinhDoanh[5];
@@ -63,7 +63,7 @@ public class Main {
 		pt2[2] = new PhuongTien("019E-922", 160, "Xe lua");
 		DanhSachPhuongTien dspt2 = new DanhSachPhuongTien(pt2, pt2.length);
 
-		tdl[1] = new TourDuLich("Dia dao Cu Chi", "20/12/2021", "22/12/2021", 6999000, dstv2, dspt2, dstp2, dscskd2);
+		tdl[1] = new TourDuLich("Dia dao Cu Chi", "20/12/2021", "22/12/2021", 6999000, "Tan Pham", dstv2, dspt2, dstp2, dscskd2);
 
 
 		CoSoKinhDoanh cskd3[] = new CoSoKinhDoanh[4];
@@ -90,7 +90,7 @@ public class Main {
 		pt3[2] = new PhuongTien("BV-299432.TS", 46, "Tau thuy");
 		DanhSachPhuongTien dspt3 = new DanhSachPhuongTien(pt3, pt3.length);
 
-		tdl[2] = new TourDuLich("Doi con heo", "25/12/2021", "27/12/2021", 11500000, dstv3, dspt3, dstp1, dscskd3);
+		tdl[2] = new TourDuLich("Doi con heo", "25/12/2021", "27/12/2021", 11500000, "Thanh Nguyen", dstv3, dspt3, dstp1, dscskd3);
 
 
 		CoSoKinhDoanh cskd4[] = new CoSoKinhDoanh[4];
@@ -118,7 +118,7 @@ public class Main {
 		pt4[3] = new PhuongTien("60B-1028", 2, "Xe may");
 		DanhSachPhuongTien dspt4 = new DanhSachPhuongTien(pt4, pt4.length);
 
-		tdl[3] = new TourDuLich("Pho co Ha Noi", "12/12/2021", "14/12/2021", 12500000, dstv4, dspt4, dstp4, dscskd4);
+		tdl[3] = new TourDuLich("Pho co Ha Noi", "12/12/2021", "14/12/2021", 12500000, "Thanh Nam", dstv4, dspt4, dstp4, dscskd4);
 
 
 		CoSoKinhDoanh cskd5[] = new CoSoKinhDoanh[5];
@@ -151,7 +151,7 @@ public class Main {
 		pt5[3] = new PhuongTien("20A-60213", 4, "Xe hơi");
 		DanhSachPhuongTien dspt5 = new DanhSachPhuongTien(pt5, pt5.length);
 
-		tdl[4] = new TourDuLich("Núi ngũ hành sơn", "08/12/2023", "10/12/2023", 13950000, dstv5, dspt5, dstp5, dscskd5);
+		tdl[4] = new TourDuLich("Núi ngũ hành sơn", "08/12/2023", "10/12/2023", 13950000,"Phat Thanh", dstv5, dspt5, dstp5, dscskd5);
 
 		DanhSachTourDuLich dstdl = new DanhSachTourDuLich(tdl, tdl.length);
 		dstdl.showMenu();
