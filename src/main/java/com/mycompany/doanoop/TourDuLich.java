@@ -72,7 +72,6 @@ public class TourDuLich {
     }
 
     public void xuat(){
-
         System.out.println("\nTên tour: " + tenTour);
         System.out.println("Ngày: " + ngayDi + " ~ " + ngayVe);
         dstv.xuat();

@@ -8,6 +8,8 @@ public class DanhSachTourDuLich implements DanhSach {
 
     private int soLuong;
 
+    Scanner sc = new Scanner(System.in);
+
     public DanhSachTourDuLich(TourDuLich[] tdl, int soLuong) {
         this.tdl = tdl;
         this.soLuong = soLuong;
@@ -24,7 +26,20 @@ public class DanhSachTourDuLich implements DanhSach {
 
 
     public void xoa() {
-
+        System.out.println("Danh sách tour: ");
+        for(int i=0; i<tdl.length; i++){
+            System.out.println("Tour thứ " + (i+1)+ ":" + tdl[i].getTenTour());
+        }
+        System.out.println("Bạn muốn xóa tour thứ ");
+        int k = sc.nextInt();
+        if(k>tdl.length){
+            System.out.println("Không tìm thấy");
+        }
+        for(int i=k-1; i<tdl.length-1; i++){
+            tdl[i] = tdl[i+1];
+        }
+        tdl = Arrays.copyOf(tdl, --soLuong);
+        System.out.println("Xóa thành công");
     }
 
     public void sua() {
@@ -32,14 +47,22 @@ public class DanhSachTourDuLich implements DanhSach {
         for(int i=0; i<tdl.length; i++){
             System.out.println("Tour thứ " + (i+1)+ ":" + tdl[i].getTenTour());
         }
-        Scanner sc = new Scanner(System.in);
+
         System.out.println("Bạn muốn sửa tour thứ ");
         tdl[sc.nextInt()-1].showMenu();
     }
 
 
     public void timKiem() {
-
+        System.out.println("Nhập tên tour cần tìm ");
+        String ten = sc.nextLine();
+        for(int i=0; i<tdl.length; i++){
+            if(tdl[i].getTenTour().equals(ten)){
+                tdl[i].xuat();
+                return;
+            }
+        }
+        System.out.println("Không tìm thấy");
     }
 
     public void xuat(){
@@ -47,7 +70,6 @@ public class DanhSachTourDuLich implements DanhSach {
         for(int i=0;i<tdl.length;i++){
             System.out.println("Tour thứ " +(i+1)+ ": " + tdl[i].getTenTour());
         }
-        Scanner sc = new Scanner(System.in);
         System.out.println("Bạn muốn xem chi tiết tour thứ: ");
         tdl[sc.nextInt()-1].xuat();
     }
@@ -67,7 +89,6 @@ public class DanhSachTourDuLich implements DanhSach {
         for(int i=0;i<tdl.length;i++){
             System.out.println("Tour thứ " +(i+1)+ ": " + tdl[i].getTenTour());
         }
-        Scanner sc = new Scanner(System.in);
         System.out.println("Bạn muốn đặt vé tour thứ: ");
         int k = sc.nextInt();
         if(k>tdl.length){
@@ -78,7 +99,6 @@ public class DanhSachTourDuLich implements DanhSach {
     }
 
     public void showMenu(){
-        Scanner sc = new Scanner(System.in);
         int x = 0;
         do {
             System.out.println("==============Menu Danh Sach Tour Du Lich ===============");
@@ -92,6 +112,7 @@ public class DanhSachTourDuLich implements DanhSach {
             System.out.println("0. Thoát");
             System.out.print("Vui lòng chọn: ");
             x  = sc.nextInt();
+            sc.nextLine();
             switch (x) {
                 case 0:
                     break;
