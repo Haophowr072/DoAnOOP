@@ -72,6 +72,11 @@ public class NhaHang extends CoSoKinhDoanh {
 		
 	}
 	
+	public void tinhTien()
+	{
+		System.out.println("Tổng giá tiền: " + giaCombo);
+	}
+	
 	 @Override
 	    public String toString() {
 	        return super.toString() + "\nNgày: " + ngay + "\nCombo: " + combo +"\nGía combo: "+ giaCombo;

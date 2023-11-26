@@ -119,6 +119,19 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 	    System.out.println();
 		
 	}
+	
+	public void tinhTien()
+	{
+		for(int i=0;i<n;i++)
+		{
+			if(cskd[i] instanceof NhaHang )
+			{
+				cskd[i].tinhTien();
+			}
+			else
+				cskd[i].tinhTien();
+		}
+	}
 
 	@Override
 	public void showMenu() {
@@ -134,7 +147,9 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
             System.out.println("5. Xuất danh sách nhà hàng ");
             System.out.println("6. Xuất danh sách khách sạn");
             System.out.println("7. Xuất danh sách cskd");
-            System.out.println("8. Thoát ");
+            System.out.println("8. Tính tiền ");
+            System.out.println("0. Thoát ");
+
             System.out.print("Vui lòng chọn :  ");
             chon = sc.nextInt();
             sc.nextLine();
@@ -161,7 +176,11 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
                 case 7:
                    xuat();
                     break;
+                    
                 case 8:
+                    tinhTien();
+                     break;
+                case 0:
                     return;
 
                 default:
@@ -193,8 +212,8 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 		
 	}
 
-	@Override
-    public String toString() {
+	
+    public String toStringNhaHang() {
         String str;
         str = "Danh sách nhà hàng ";
         for(int i=0; i<cskd.length; i++){
@@ -207,8 +226,8 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
         return str;
     }
 	
-	@Override
-	public String toString1() {
+	
+	public String toStringKhachSan() {
 		String str;
 		str= "Danh sách khách sạn ";
 		for(int i=0;i<cskd.length;i++)
@@ -220,6 +239,11 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 			}
 		}
 		return str;
+	}
+	
+	@Override 
+	public String toString() {
+		return toStringKhachSan() + toStringNhaHang();
 	}
 	
 	
