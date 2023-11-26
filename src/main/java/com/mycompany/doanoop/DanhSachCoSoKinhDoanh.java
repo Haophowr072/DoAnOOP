@@ -38,6 +38,13 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 			break;
 		}
 	}
+	public void xuat() {
+		xuatKS();
+		xuatNH();
+		
+	
+		
+	}
 	@Override
 	public void them() {
 		System.out.println("So luong cskd muon them");
@@ -46,7 +53,7 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 		for(int i=0; i<so;i++)
 		{
 			cskd=Arrays.copyOf(cskd, n+1);
-			setup(i, cskd);
+			setup(n, cskd);
 			System.out.println("Them thanh cong");
 			n++;
 		}
@@ -112,6 +119,19 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 	    System.out.println();
 		
 	}
+	
+	public void tinhTien()
+	{
+		for(int i=0;i<n;i++)
+		{
+			if(cskd[i] instanceof NhaHang )
+			{
+				cskd[i].tinhTien();
+			}
+			else
+				cskd[i].tinhTien();
+		}
+	}
 
 	@Override
 	public void showMenu() {
@@ -124,10 +144,12 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
             System.out.println("2. Sửa cskd ");
             System.out.println("3. Xóa cskd ");
             System.out.println("4. Tìm kiếm cskd ");
-            System.out.println("5. Xuất danh sách cskd ");
-            System.out.println("6. Xuất file danh sách cskd");
-            System.out.println("7. Thêm danh sách cskd mới từ file ");
-            System.out.println("8. Thoát ");
+            System.out.println("5. Xuất danh sách nhà hàng ");
+            System.out.println("6. Xuất danh sách khách sạn");
+            System.out.println("7. Xuất danh sách cskd");
+            System.out.println("8. Tính tiền ");
+            System.out.println("0. Thoát ");
+
             System.out.print("Vui lòng chọn :  ");
             chon = sc.nextInt();
             sc.nextLine();
@@ -145,15 +167,20 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
                     timKiem();
                     break;
                 case 5:
-                    xuat();
+                    xuatNH();
+                    
                     break;
                 case 6:
-                   // ghiFile();
+                	xuatKS();
                     break;
                 case 7:
-                    //docFile();
+                   xuat();
                     break;
+                    
                 case 8:
+                    tinhTien();
+                     break;
+                case 0:
                     return;
 
                 default:
@@ -163,8 +190,7 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
         }while (n!=0);
 		
 	}
-
-
+	
 	public void xuat() {
 		xuatNhaHang();
 		xuatKhachSan();
@@ -189,6 +215,60 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 		}
 
 
+	}
+
+	public void xuatNH() {
+		System.out.println("Danh sach nha hang");
+		for(int i=0; i<n;i++)
+			if(cskd[i] instanceof NhaHang)
+			{
+				cskd[i].xuat();
+			}
+		
+	}
+	
+	public void xuatKS() {
+		System.out.println("Danh sach khach san");
+		for(int i=0; i<n;i++)
+			if(cskd[i] instanceof KhachSan)
+			{
+				cskd[i].xuat();
+			}
+		
+	}
+
+	
+    public String toStringNhaHang() {
+        String str;
+        str = "Danh sách nhà hàng ";
+        for(int i=0; i<cskd.length; i++){
+        	if(cskd[i] instanceof NhaHang)
+			{	
+        		str+= "\n\nNhà hàng thứ "+(i+1) + ":";
+                str+= cskd[i].toString();
+			}
+        }
+        return str;
+    }
+	
+	
+	public String toStringKhachSan() {
+		String str;
+		str= "Danh sách khách sạn ";
+		for(int i=0;i<cskd.length;i++)
+		{
+			if(cskd[i] instanceof KhachSan)
+			{
+				str+= "\n\nKhách sạn thứ "+(i+1)+":";
+				str+=cskd[i].toString();
+			}
+		}
+		return str;
+	}
+	
+	@Override 
+	public String toString() {
+		return toStringKhachSan() + toStringNhaHang();
 	}
 	
 }

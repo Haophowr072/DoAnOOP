@@ -18,7 +18,8 @@ public class NhaHang extends CoSoKinhDoanh {
 		super(idNH());
 	}
 
-	public NhaHang(String ten, String diaChi, String sao, String ngay, String combo, int giaCombo) {
+
+	public NhaHang( String ten,String diaChi,String sao, String ngay, String combo, int giaCombo) {
 		super(idNH(), ten, diaChi, sao);
 		this.ngay = ngay;
 		this.combo = combo;
@@ -68,5 +69,15 @@ public class NhaHang extends CoSoKinhDoanh {
 		System.out.println("Combo: " + combo);
 		System.out.println("Gia combo: " + giaCombo);
 	}
+	
+	public void tinhTien()
+	{
+		System.out.println("Tổng giá tiền: " + giaCombo);
+	}
+	
+	 @Override
+	    public String toString() {
+	        return super.toString() + "\nNgày: " + ngay + "\nCombo: " + combo +"\nGía combo: "+ giaCombo;
+	    }
 	
 }

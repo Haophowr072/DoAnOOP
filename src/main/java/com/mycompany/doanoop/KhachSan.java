@@ -1,5 +1,8 @@
 package com.mycompany.doanoop;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class KhachSan extends CoSoKinhDoanh {
@@ -20,8 +23,7 @@ public class KhachSan extends CoSoKinhDoanh {
 	}
 	
 	
-	
-	public KhachSan(String ten, String diaChi, String sao, String ngayDen, String ngayDi, int donGia) {
+	public KhachSan( String ten,String diaChi,String sao, String ngayDen, String ngayDi, int donGia) {
 		super(idKS(), ten, diaChi, sao);
 		this.ngayDen = ngayDen;
 		this.ngayDi = ngayDi;
@@ -72,5 +74,24 @@ public class KhachSan extends CoSoKinhDoanh {
 
 		
 	}
+	
+	public void tinhTien()
+	{
+		 try {
+			Date startDate = new SimpleDateFormat("dd/MM/yyyy").parse(ngayDen);
+			Date endDate = new SimpleDateFormat("dd/MM/yyyy").parse(ngayDi);
+			long startValue = startDate.getTime();
+			long endValue = endDate.getTime();
+			long tinh = endValue - startValue;
+			System.out.println(tinh);
+		} catch (ParseException e) {
+			
+			e.printStackTrace();
+		}
+	}
+	 @Override
+	    public String toString() {
+	        return super.toString() + "\nNgày đến: " + ngayDen + "\nNgày đi: " + ngayDi +"\nĐơn giá: "+ donGia;
+	    }
 }
 

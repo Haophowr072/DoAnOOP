@@ -1,7 +1,7 @@
 package com.mycompany.doanoop;
 
 import java.util.Scanner;
-public class CoSoKinhDoanh {
+public abstract class CoSoKinhDoanh {
 	private String id;
 	private String ten;
 	private String diaChi;
@@ -66,6 +66,17 @@ public class CoSoKinhDoanh {
 		System.out.println("Sao: " + sao);
 
 	}
+	
+	public abstract void tinhTien();
+	
+		
+	
+	@Override
+    public String toString() {
+        String str;
+        str = "\nID: " + id + "\nHọ tên: " + ten + "\nĐịa chỉ: " + diaChi + "\nĐịa chỉ: " + diaChi +  "\nSao: " + sao ;
+        return str;
+    }
 	
 
 }
