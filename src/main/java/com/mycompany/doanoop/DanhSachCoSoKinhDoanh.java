@@ -123,11 +123,59 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 		{
 			if(cskd[i] instanceof NhaHang )
 			{
+				System.out.println("Tính tiền nhà hàng "+ cskd[i].getTen()+ ": ");
 				cskd[i].tinhTien();
+				System.out.println();
 			}
 			else
+			{
+				System.out.println("Tính tiền khách sạn "+ cskd[i].getTen()+ ": ");
 				cskd[i].tinhTien();
+				System.out.println();
+			}
 		}
+	}
+
+
+
+	public void xuatNhaHang() {
+		System.out.println("Danh sach cskd");
+		for(int i=0;i<n;i++) {
+			if (cskd[i] instanceof NhaHang) {
+				cskd[i].xuat();
+			}
+		}
+	}
+
+	public void xuatKhachSan() {
+		System.out.println("Danh sach cskd");
+		for (int i = 0; i < n; i++) {
+			if (cskd[i] instanceof KhachSan) {
+				cskd[i].xuat();
+			}
+		}
+
+
+	}
+
+	public void xuatNH() {
+		System.out.println("Danh sach nha hang");
+		for(int i=0; i<n;i++)
+			if(cskd[i] instanceof NhaHang)
+			{
+				cskd[i].xuat();
+			}
+		
+	}
+	
+	public void xuatKS() {
+		System.out.println("Danh sach khach san");
+		for(int i=0; i<n;i++)
+			if(cskd[i] instanceof KhachSan)
+			{
+				cskd[i].xuat();
+			}
+		
 	}
 
 	@Override
@@ -227,8 +275,6 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 			}
 		
 	}
-
-	
     public String toStringNhaHang() {
         String str;
         str = "Danh sách nhà hàng ";
@@ -241,8 +287,7 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
         }
         return str;
     }
-	
-	
+
 	public String toStringKhachSan() {
 		String str;
 		str= "Danh sách khách sạn ";

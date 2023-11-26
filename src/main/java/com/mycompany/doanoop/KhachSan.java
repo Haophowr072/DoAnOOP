@@ -83,7 +83,9 @@ public class KhachSan extends CoSoKinhDoanh {
 			long startValue = startDate.getTime();
 			long endValue = endDate.getTime();
 			long tinh = endValue - startValue;
-			System.out.println(tinh);
+			long result = tinh/(24*60*60*1000);
+			System.out.println(" Tổng giá tiền khách sạn: "+ (result*donGia) );
+			
 		} catch (ParseException e) {
 			
 			e.printStackTrace();

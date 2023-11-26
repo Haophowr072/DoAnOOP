@@ -72,7 +72,7 @@ public class NhaHang extends CoSoKinhDoanh {
 	
 	public void tinhTien()
 	{
-		System.out.println("Tổng giá tiền: " + giaCombo);
+		System.out.println("Tổng giá tiền sử dụng nhà hàng: " + giaCombo);
 	}
 	
 	 @Override
