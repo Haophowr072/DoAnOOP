@@ -41,6 +41,21 @@ public class TourDuLich {
         return tenTour;
     }
 
+    public String getNgayDi() {
+        return ngayDi;
+    }
+    public String getNgayVe() {
+        return ngayVe;
+    }
+
+    public int getGiaTien() {
+        return giaTien;
+    }
+
+    public String getNguoiDat() {
+        return nguoiDat;
+    }
+
     public void chinhSuaPT() {
         dspt.showMenu();
     }
@@ -91,6 +106,10 @@ public class TourDuLich {
 
     public void datVe(){
         dstv.datVe();
+    }
+
+    public void tinhTien(){
+        dscskd.tinhTien();
     }
 
     public void showMenu(){

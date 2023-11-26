@@ -69,10 +69,10 @@ public class NhaHang extends CoSoKinhDoanh {
 		System.out.println("Combo: " + combo);
 		System.out.println("Gia combo: " + giaCombo);
 	}
-	
+	@Override
 	public void tinhTien()
 	{
-		System.out.println("Tổng giá tiền sử dụng nhà hàng: " + giaCombo);
+		System.out.println("Tổng tiền : " + giaCombo);
 	}
 	
 	 @Override

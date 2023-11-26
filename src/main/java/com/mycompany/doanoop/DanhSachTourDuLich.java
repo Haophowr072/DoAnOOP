@@ -70,8 +70,16 @@ public class DanhSachTourDuLich implements DanhSach {
         for(int i=0;i<tdl.length;i++){
             System.out.println("Tour thứ " +(i+1)+ ": " + tdl[i].getTenTour());
         }
-        System.out.println("Bạn muốn xem chi tiết tour thứ: ");
-        tdl[sc.nextInt()-1].xuat();
+        System.out.println("Bạn muốn xuất hóa đơn tour thứ: ");
+        int so = sc.nextInt();
+        System.out.println("Tên tour: " + tdl[so-1].getTenTour());
+        System.out.println("Ngày đi: " + tdl[so-1].getNgayDi());
+        System.out.println("Ngày về: " + tdl[so-1].getNgayVe());
+        System.out.println("Người đặt: " + tdl[so-1].getNguoiDat());
+        System.out.println("Giá vé tour: " + tdl[so-1].getGiaTien());
+        System.out.println();
+        System.out.println("Giá tiền nhà hàng khách sạn phải thanh toán ");
+        tdl[so-1].tinhTien();
     }
 
     public void xuatAll(){
@@ -89,7 +97,7 @@ public class DanhSachTourDuLich implements DanhSach {
         for(int i=0;i<tdl.length;i++){
             System.out.println("Tour thứ " +(i+1)+ ": " + tdl[i].getTenTour());
         }
-        System.out.println("Bạn muốn đặt vé tour thứ: ");
+        System.out.println("Bạn muốn đặt vé và xuất hóa đơn tour thứ: ");
         int k = sc.nextInt();
         if(k>tdl.length){
             System.out.println("Khong tim thay");
@@ -97,6 +105,7 @@ public class DanhSachTourDuLich implements DanhSach {
         }
         tdl[k-1].datVe();
     }
+
 
     public void showMenu(){
         int x = 0;
@@ -106,7 +115,7 @@ public class DanhSachTourDuLich implements DanhSach {
             System.out.println("2. Chỉnh sửa tour du lịch");
             System.out.println("3. Xóa tour");
             System.out.println("4. Tìm kiếm tour");
-            System.out.println("5. Chi tiết tour du lịch");
+            System.out.println("5. Xuất hóa đơn tour du lịch");
             System.out.println("6. Xuất tất cả danh sách tour");
             System.out.println("7. Đặt vé tour ");
             System.out.println("0. Thoát");

@@ -39,8 +39,8 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 		}
 	}
 	public void xuat() {
-		xuatKS();
-		xuatNH();
+		xuatKhachSan();
+		xuatNhaHang();
 	}
 	@Override
 	public void them() {
@@ -116,27 +116,6 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 	    System.out.println();
 		
 	}
-	
-	public void tinhTien()
-	{
-		for(int i=0;i<n;i++)
-		{
-			if(cskd[i] instanceof NhaHang )
-			{
-				System.out.println("Tính tiền nhà hàng "+ cskd[i].getTen()+ ": ");
-				cskd[i].tinhTien();
-				System.out.println();
-			}
-			else
-			{
-				System.out.println("Tính tiền khách sạn "+ cskd[i].getTen()+ ": ");
-				cskd[i].tinhTien();
-				System.out.println();
-			}
-		}
-	}
-
-
 
 	public void xuatNhaHang() {
 		System.out.println("Danh sach cskd");
@@ -154,29 +133,27 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 				cskd[i].xuat();
 			}
 		}
-
-
 	}
 
-	public void xuatNH() {
-		System.out.println("Danh sach nha hang");
-		for(int i=0; i<n;i++)
-			if(cskd[i] instanceof NhaHang)
+	public void tinhTien()
+	{
+		for(int i=0;i<cskd.length;i++)
+		{
+			if(cskd[i] instanceof NhaHang )
 			{
-				cskd[i].xuat();
+				System.out.println("Nhà hàng "+ cskd[i].getTen()+ ": ");
+				cskd[i].tinhTien();
+				System.out.println();
 			}
-		
-	}
-	
-	public void xuatKS() {
-		System.out.println("Danh sach khach san");
-		for(int i=0; i<n;i++)
-			if(cskd[i] instanceof KhachSan)
+			else
 			{
-				cskd[i].xuat();
+				System.out.println("Khách sạn "+ cskd[i].getTen()+ ": ");
+				cskd[i].tinhTien();
+				System.out.println();
 			}
-		
+		}
 	}
+
 
 	@Override
 	public void showMenu() {
@@ -212,11 +189,11 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
                     timKiem();
                     break;
                 case 5:
-                    xuatNH();
+					xuatNhaHang();
                     
                     break;
                 case 6:
-                	xuatKS();
+					xuatKhachSan();
                     break;
                 case 7:
                    xuat();
@@ -236,45 +213,6 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 		
 	}
 
-	public void xuatNhaHang() {
-		System.out.println("Danh sach cskd");
-		for(int i=0;i<n;i++) {
-			if (cskd[i] instanceof NhaHang) {
-				cskd[i].xuat();
-			}
-		}
-	}
-
-	public void xuatKhachSan() {
-		System.out.println("Danh sach cskd");
-		for (int i = 0; i < n; i++) {
-			if (cskd[i] instanceof KhachSan) {
-				cskd[i].xuat();
-			}
-		}
-
-
-	}
-
-	public void xuatNH() {
-		System.out.println("Danh sach nha hang");
-		for(int i=0; i<n;i++)
-			if(cskd[i] instanceof NhaHang)
-			{
-				cskd[i].xuat();
-			}
-		
-	}
-	
-	public void xuatKS() {
-		System.out.println("Danh sach khach san");
-		for(int i=0; i<n;i++)
-			if(cskd[i] instanceof KhachSan)
-			{
-				cskd[i].xuat();
-			}
-		
-	}
     public String toStringNhaHang() {
         String str;
         str = "Danh sách nhà hàng ";
