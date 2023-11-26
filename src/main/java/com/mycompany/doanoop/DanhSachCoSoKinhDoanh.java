@@ -41,9 +41,6 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 	public void xuat() {
 		xuatKS();
 		xuatNH();
-		
-	
-		
 	}
 	@Override
 	public void them() {
@@ -190,12 +187,6 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
         }while (n!=0);
 		
 	}
-	
-	public void xuat() {
-		xuatNhaHang();
-		xuatKhachSan();
-	}
-
 
 	public void xuatNhaHang() {
 		System.out.println("Danh sach cskd");
