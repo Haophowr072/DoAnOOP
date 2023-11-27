@@ -20,7 +20,7 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 
 	public void setup(int i, CoSoKinhDoanh[] cskd) {
 
-		System.out.println("1. Khach san \n2. Nha Hang");
+		System.out.println("1. Khách sạn \n2. Nhà Hàng");
 		int chon = sc.nextInt();
 		switch (chon) {
 		case 1:
@@ -32,7 +32,7 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 			cskd[i].nhap();
 			break;
 		default:
-			System.out.println("Nhap sai vui long nhap lai ");
+			System.out.println("Nhập sai vui lòng nhập lại  ");
 			setup(i, cskd);
 			break;
 		}
@@ -45,13 +45,13 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 
 	@Override
 	public void them() {
-		System.out.println("So luong cskd muon them");
+		System.out.println("Số lượng cơ sở kinh doanh muốn thêm: ");
 		int so = sc.nextInt();
 		sc.nextLine();
 		for (int i = 0; i < so; i++) {
 			cskd = Arrays.copyOf(cskd, n + 1);
 			setup(n, cskd);
-			System.out.println("Them thanh cong");
+			System.out.println("Thêm thành công");
 			n++;
 		}
 
@@ -59,7 +59,7 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 
 	@Override
 	public void xoa() {
-		System.out.println("Nhap ma cskd can xoa: ");
+		System.out.println("Nhập mã cơ sở kinh doanh cần xóa: ");
 		String ma = sc.nextLine();
 		for (int i = 0; i < n; i++) {
 			if (cskd[i].getId().equals(ma)) {
@@ -70,7 +70,7 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 				n--;
 			}
 		}
-		System.out.println("Id kh tim thay");
+		System.out.println("Id không tìm thấy");
 		System.out.println();
 
 	}
