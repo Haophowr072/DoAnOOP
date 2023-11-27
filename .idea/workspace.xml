@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b24504c4-5806-41c2-96ae-3e766f26c13b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/DanhSachCoSoKinhDoanh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/DanhSachCoSoKinhDoanh.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/DanhSachTourDuLich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/DanhSachTourDuLich.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/KhachSan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/KhachSan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/NhaHang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/NhaHang.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/TourDuLich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/TourDuLich.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,14 +70,10 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/DanhSachTourDuLich.java</url>
-          <line>67</line>
-          <properties class="com.mycompany.doanoop.DanhSachTourDuLich" method="xuat">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
+          <line>110</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

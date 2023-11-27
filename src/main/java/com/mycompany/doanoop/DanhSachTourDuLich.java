@@ -106,44 +106,63 @@ public class DanhSachTourDuLich implements DanhSach {
         tdl[k-1].datVe();
     }
 
-
+    int x = 0;
     public void showMenu(){
-        int x = 0;
+        x = 0;
         do {
             System.out.println("==============Menu Danh Sach Tour Du Lich ===============");
-            System.out.println("1. Thêm tour");
-            System.out.println("2. Chỉnh sửa tour du lịch");
-            System.out.println("3. Xóa tour");
-            System.out.println("4. Tìm kiếm tour");
-            System.out.println("5. Xuất hóa đơn tour du lịch");
-            System.out.println("6. Xuất tất cả danh sách tour");
-            System.out.println("7. Đặt vé tour ");
+            System.out.println("1. Quản lý tour du lịch");
+            System.out.println("2. Đặt vé tour ");
             System.out.println("0. Thoát");
             System.out.print("Vui lòng chọn: ");
             x  = sc.nextInt();
-            sc.nextLine();
             switch (x) {
                 case 0:
-                    break;
+                    return;
                 case 1:
-                    them();
+                    x = 0;
+                    do {
+                        System.out.println("==============Menu Danh Sach Tour Du Lich ===============");
+                        System.out.println("1. Thêm tour");
+                        System.out.println("2. Chỉnh sửa tour du lịch");
+                        System.out.println("3. Xóa tour");
+                        System.out.println("4. Tìm kiếm tour");
+                        System.out.println("5. Xuất hóa đơn tour du lịch");
+                        System.out.println("6. Xuất tất cả danh sách tour");
+                        System.out.println("0. Thoát");
+                        System.out.print("Vui lòng chọn: ");
+                        x  = sc.nextInt();
+                        switch (x) {
+                            case 0:
+                                showMenu();
+                            case 1:
+                                them();
+                                break;
+                            case 2:
+                                sua();
+                                break;
+                            case 3:
+                                xoa();
+                                break;
+                            case 4:
+                                timKiem();
+                                break;
+                            case 5:
+                                xuat();
+                                break;
+                            case 6:
+                                xuatAll();
+                                break;
+//                            case 7:
+//                                datVe();
+//                                break;
+                            default:
+                                System.out.println("Nhập sai vui lòng nhập lại: ");
+                                break;
+                        }
+                    } while (x != 0);
                     break;
                 case 2:
-                    sua();
-                    break;
-                case 3:
-                    xoa();
-                    break;
-                case 4:
-                    timKiem();
-                    break;
-                case 5:
-                    xuat();
-                    break;
-                case 6:
-                    xuatAll();
-                    break;
-                case 7:
                     datVe();
                     break;
                 default:

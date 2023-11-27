@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class HanhKhach extends ConNguoi {
     private String loaiTV;
     private String diemTichLuy;
+    private TourDuLich tourDuLich;
     private static String tourDat = "";
     private static int idHKCur = 1;
 
@@ -55,7 +56,6 @@ public class HanhKhach extends ConNguoi {
         super.xuat();
         System.out.println("Loại thành viên: " + loaiTV);
         System.out.println("Điểm tích lũy: " + diemTichLuy);
-        System.out.println("Tour đã đặt: " + tourDat);
     }
 
     @Override
