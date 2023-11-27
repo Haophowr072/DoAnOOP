@@ -101,31 +101,32 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 					case 2:
 						System.out.println("Nhập: ");
 						String diaChi = sc.nextLine();
-						cskd[i].setTen(diaChi);
+						cskd[i].setDiaChi(diaChi);
 						break;
 
 					case 3:
 						System.out.println("Nhập: ");
 						String sao = sc.nextLine();
-						cskd[i].setTen(sao);
+						cskd[i].setSao(sao);
 						break;
 					case 4:
 						System.out.println("Nhập: ");
 						String ngay = sc.nextLine();
-						cskd[i].setTen(ngay);
+						((NhaHang) cskd[i]).setNgay(ngay);
 						break;
 					case 5:
 						System.out.println("Nhập: ");
 						String combo = sc.nextLine();
-						cskd[i].setTen(combo);
+						((NhaHang) cskd[i]).setCombo(combo);
 						break;
 					case 6:
 						System.out.println("Nhập: ");
-						String giaCombo = sc.nextLine();
-						cskd[i].setTen(giaCombo);
+						int giaCombo = sc.nextInt();
+						((NhaHang) cskd[i]).setGiaCombo(giaCombo);
 						break;
 
 					}
+					System.out.println("Sửa thành công");
 
 				}
 
@@ -150,29 +151,32 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 					case 2:
 						System.out.println("Nhập: ");
 						String diaChi = sc.nextLine();
-						cskd[i].setTen(diaChi);
+						cskd[i].setDiaChi(diaChi);
 						break;
 
 					case 3:
 						System.out.println("Nhập: ");
 						String sao = sc.nextLine();
-						cskd[i].setTen(sao);
+						cskd[i].setSao(sao);
 						break;
 					case 4:
 						System.out.println("Nhập: ");
 						String ngayDen = sc.nextLine();
-						cskd[i].setTen(ngayDen);
+						((KhachSan)cskd[i]).setNgayDen(ngayDen);
 						break;
 					case 5:
 						System.out.println("Nhập: ");
 						String ngayDi = sc.nextLine();
-						cskd[i].setTen(ngayDi);
+						((KhachSan)cskd[i]).setNgayDi(ngayDi);
 						break;
 					case 6:
 						System.out.println("Nhập: ");
-						String donGia = sc.nextLine();
-						cskd[i].setTen(donGia);
+						int donGia = sc.nextInt();
+						((KhachSan)cskd[i]).setDonGia(donGia);
 						break;
+					default:
+                        System.out.println("Nhập sai vui lòng nhập lại: ");
+                        break;
 
 					}
 					
@@ -285,9 +289,6 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 			case 0:
 				return;
 
-			default:
-				System.out.println("Nhập sai !! Vui lòng nhập lại ");
-				break;
 			}
 		} while (n != 0);
 
