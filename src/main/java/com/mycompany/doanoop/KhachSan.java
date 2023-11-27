@@ -86,9 +86,8 @@ public class KhachSan extends CoSoKinhDoanh {
 			long result = tinh/(24*60*60*1000);
 			System.out.println(" Tổng tiền : "+ (result*donGia) );
 			
-		} catch (ParseException e) {
-			
-			e.printStackTrace();
+		} catch (Exception e) {
+			e.getMessage();
 		}
 	}
 	 @Override

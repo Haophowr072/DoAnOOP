@@ -1,5 +1,9 @@
 package com.mycompany.doanoop;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -91,6 +95,21 @@ public class DanhSachTourDuLich implements DanhSach {
             System.out.println("\n*************************************************");
         }
     }
+    public void ghiFile(){
+        try {
+            BufferedWriter fw = new BufferedWriter(new FileWriter("dataTour.txt"));
+            fw.write("DANH SÁCH TOUR DU LỊCH");
+            fw.write("");
+            for(int i=0; i<soLuong; i++){
+                fw.write("Tour thứ " + (i+1) + " :");
+                fw.write(tdl[i].toString());
+                fw.write("========================");
+            }
+            System.out.println("Xuất file thành công");
+        }catch (Exception e){
+            e.getMessage();
+        }
+    }
 
     public void datVe(){
         System.out.println("\n-------Danh sách tour");
@@ -129,6 +148,7 @@ public class DanhSachTourDuLich implements DanhSach {
                         System.out.println("4. Tìm kiếm tour");
                         System.out.println("5. Xuất hóa đơn tour du lịch");
                         System.out.println("6. Xuất tất cả danh sách tour");
+                        System.out.println("7. Ghi file danh sách tour");
                         System.out.println("0. Thoát");
                         System.out.print("Vui lòng chọn: ");
                         x  = sc.nextInt();
@@ -153,9 +173,9 @@ public class DanhSachTourDuLich implements DanhSach {
                             case 6:
                                 xuatAll();
                                 break;
-//                            case 7:
-//                                datVe();
-//                                break;
+                            case 7:
+                                ghiFile();
+                                break;
                             default:
                                 System.out.println("Nhập sai vui lòng nhập lại: ");
                                 break;

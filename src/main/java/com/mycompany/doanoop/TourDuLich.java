@@ -1,5 +1,7 @@
 package com.mycompany.doanoop;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 /**
@@ -107,6 +109,7 @@ public class TourDuLich {
     public void datVe(){
         dstv.datVe();
     }
+
 
     public void tinhTien(){
         dscskd.tinhTien();

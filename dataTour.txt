@@ -1,0 +1,338 @@
+DANH SÁCH TOUR DU LỊCHTour thứ 1 :Tên tour: Bửu Long
+Ngày: 23/12/2023 ~ 24/12/2023
+Danh sách thành viên 
+
+Thành viên thứ 1:
+ID: HK1
+Họ tên: Nguyễn Hoàng
+Ngày sinh: 11/10/1998
+Địa chỉ: Hồ Chí Minh
+Số điện thoại: 0987654321
+Căn cước công dân: 985161635
+Loại thành viên: VIP
+Điểm tích lũy: 18
+Tour đã đặt: 
+
+Thành viên thứ 2:
+ID: HK2
+Họ tên: Hoàng Thanh
+Ngày sinh: 18/02/1995
+Địa chỉ: Hà Nội
+Số điện thoại: 0987654123
+Căn cước công dân: 231551623
+Loại thành viên: TV
+Điểm tích lũy: 10
+Tour đã đặt: 
+
+Thành viên thứ 3:
+ID: HK3
+Họ tên: Thành Nguyễn
+Ngày sinh: 16/04/1993
+Địa chỉ: Hà Nội
+Số điện thoại: 0987665544
+Căn cước công dân: 526846231
+Loại thành viên: TV
+Điểm tích lũy: 12
+Tour đã đặt: 
+
+Thành viên thứ 4:
+ID: HK4
+Họ tên: Nguyễn Trân
+Ngày sinh: 28/09/1994
+Địa chỉ: Hồ Chí Minh
+Số điện thoại: 0988877755
+Căn cước công dân: 135186486
+Loại thành viên: VIP
+Điểm tích lũy: 14
+Tour đã đặt: 
+
+Thành viên thứ 5:
+ID: HDV1
+Họ tên: Trung Trần
+Ngày sinh: 12/03/1989
+Địa chỉ: Hồ Chí Minh
+Số điện thoại: 0923456789
+Căn cước công dân: 21616556
+Kinh nghiệm: 3 nam
+Ngày vào làm: 12/03/1986Danh sách khách sạn 
+
+Khách sạn thứ 3:
+ID: KS1
+Họ tên: De La Sol Villa Đà Lạt
+Địa chỉ: 91 Đường Hùng Vương, Phường 11, Đà Lạt
+Địa chỉ: 91 Đường Hùng Vương, Phường 11, Đà Lạt
+Sao: 3 Sao
+Ngày đến: 23/11/2023
+Ngày đi: 26/11/2023
+Đơn giá: 400000Danh sách nhà hàng 
+
+Nhà hàng thứ 1:
+ID: NH1
+Họ tên: Memory Đà Lạt
+Địa chỉ: 24B đường Hùng Vương, Phường 10, Tp Đà Lạt
+Địa chỉ: 24B đường Hùng Vương, Phường 10, Tp Đà Lạt
+Sao: 4 Sao
+Ngày: Gia Đình 4 Người
+Combo: 24/11/2023
+Gía combo: 500000
+
+Nhà hàng thứ 2:
+ID: NH2
+Họ tên: The Thai Cuisine
+Địa chỉ: 74 Yersin, phường 10, TP Đà Lạt
+Địa chỉ: 74 Yersin, phường 10, TP Đà Lạt
+Sao: 5 Sao
+Ngày: Một người
+Combo: 24/11/2023
+Gía combo: 120000Danh sách thành phố
+
+ Thành phố  1.
+ Thành Phố : TP. Đà Lạt
+ Khí hậu Lạnh
+ Nhiệt độ 16 doC
+ Ngôn ngữ Tiếng việtDanh sách phương tiện
+
+ Phương tiện thứ 1.
+ Biển kiểm soát : F9-2012
+ Số chỗ ngồi 2
+ Loại phương tiện Xe máy
+
+ Phương tiện thứ 2.
+ Biển kiểm soát : 51A-28888
+ Số chỗ ngồi 4
+ Loại phương tiện Xe hơi
+Người đặt vé: Nguyễn Hoàng
+------Giá tour: 9890000
+========================Tour thứ 2 :Tên tour: Địa đạo Củ Chi
+Ngày: 20/12/2023 ~ 22/12/2023
+Danh sách thành viên 
+
+Thành viên thứ 1:
+ID: HK5
+Họ tên: Nguyễn Trung
+Ngày sinh: 11/03/1994
+Địa chỉ: Hồ Chí Minh
+Số điện thoại: 0987654365
+Căn cước công dân: 98516455
+Loại thành viên: TV
+Điểm tích lũy: 09
+Tour đã đặt: 
+
+Thành viên thứ 2:
+ID: HK6
+Họ tên: Hoàng Kiều
+Ngày sinh: 27/02/1998
+Địa chỉ: Hà Nội
+Số điện thoại: 0987694511
+Căn cước công dân: 231551654
+Loại thành viên: TV
+Điểm tích lũy: 10
+Tour đã đặt: 
+
+Thành viên thứ 3:
+ID: HDV2
+Họ tên: Mai Nguyễn
+Ngày sinh: 12/03/1989
+Địa chỉ: Hồ Chí Minh
+Số điện thoại: 0923456789
+Căn cước công dân: 21616556
+Kinh nghiệm: 3 nam
+Ngày vào làm: 12/03/1986Danh sách khách sạn 
+
+Khách sạn thứ 4:
+ID: KS2
+Họ tên: Lê Na
+Địa chỉ: 332 Ba Tháng Hai, Quan 5, TPHCM
+Địa chỉ: 332 Ba Tháng Hai, Quan 5, TPHCM
+Sao: 5 Sao
+Ngày đến: 20/12/2023
+Ngày đi: 21/12/2023
+Đơn giá: 680000
+
+Khách sạn thứ 5:
+ID: KS3
+Họ tên: Đoàn Duy
+Địa chỉ: 23 Ly Thuong Kiet, Quan 5, TPHCM
+Địa chỉ: 23 Ly Thuong Kiet, Quan 5, TPHCM
+Sao: 4 Sao
+Ngày đến: 21/12/2023
+Ngày đi: 22/12/2023
+Đơn giá: 420000Danh sách nhà hàng 
+
+Nhà hàng thứ 1:
+ID: NH3
+Họ tên: Tân Phạm
+Địa chỉ: 253 Lý Thái Tổ, Quan 5, TPHCM
+Địa chỉ: 253 Lý Thái Tổ, Quan 5, TPHCM
+Sao: 5 Sao
+Ngày: Gia Đình 5 Người
+Combo: 20/12/2023
+Gía combo: 400000
+
+Nhà hàng thứ 2:
+ID: NH4
+Họ tên: Hữu Chiến
+Địa chỉ: 144 Âu Cơ, Quan Tan Binh, TPHCM
+Địa chỉ: 144 Âu Cơ, Quan Tan Binh, TPHCM
+Sao: 4 Sao
+Ngày: Gia Đình 4 Người
+Combo: 21/12/2023
+Gía combo: 480000
+
+Nhà hàng thứ 3:
+ID: NH5
+Họ tên: Quân Trần
+Địa chỉ: 20 An Duong Vuong, Quan 5, TPHCM
+Địa chỉ: 20 An Duong Vuong, Quan 5, TPHCM
+Sao: 5 Sao
+Ngày: Một Người
+Combo: 22/12/2023
+Gía combo: 200000Danh sách thành phố
+
+ Thành phố  1.
+ Thành Phố : TPHCM
+ Khí hậu Nhiệt đới gió mùa
+ Nhiệt độ 32 doC
+ Ngôn ngữ Tiếng Việt, Tiếng AnhDanh sách phương tiện
+
+ Phương tiện thứ 1.
+ Biển kiểm soát : 59B-3012
+ Số chỗ ngồi 2
+ Loại phương tiện Xe máy
+
+ Phương tiện thứ 2.
+ Biển kiểm soát : 86A-15922
+ Số chỗ ngồi 4
+ Loại phương tiện Xe hơi
+
+ Phương tiện thứ 3.
+ Biển kiểm soát : 019E-922
+ Số chỗ ngồi 160
+ Loại phương tiện Xe lua
+Người đặt vé: Tân Phạm
+------Giá tour: 6999000
+========================Tour thứ 3 :Tên tour: Đòi con heo
+Ngày: 25/12/2023 ~ 27/12/2023
+Danh sách thành viên 
+
+Thành viên thứ 1:
+ID: HK7
+Họ tên: Thanh Nguyễn
+Ngày sinh: 24/04/1993
+Địa chỉ: Hà Nội
+Số điện thoại: 0987648632
+Căn cước công dân: 526846414
+Loại thành viên: TV
+Điểm tích lũy: 16
+Tour đã đặt: 
+
+Thành viên thứ 2:
+ID: HK8
+Họ tên: Thanh Thao
+Ngày sinh: 27/02/1994
+Địa chỉ: Hồ Chí Minh
+Số điện thoại: 0988874541
+Căn cước công dân: 135186963
+Loại thành viên: TV
+Điểm tích lũy: 09
+Tour đã đặt: 
+
+Thành viên thứ 3:
+ID: HK9
+Họ tên: Trần Tiến
+Ngày sinh: 25/09/1993
+Địa chỉ: Hồ Chí Minh
+Số điện thoại: 0987658974
+Căn cước công dân: 985161321
+Loại thành viên: VIP
+Điểm tích lũy: 18
+Tour đã đặt: 
+
+Thành viên thứ 4:
+ID: HDV3
+Họ tên: Thanh Trà
+Ngày sinh: 19/11/1987
+Địa chỉ: Hồ Chí Minh
+Số điện thoại: 0956432189
+Căn cước công dân: 516846115
+Kinh nghiệm: 4 nam
+Ngày vào làm: 19/11/1983Danh sách khách sạn 
+
+Khách sạn thứ 3:
+ID: KS4
+Họ tên: Fusion Suites
+Địa chỉ: 12-14 Thuỳ Vân, Bà Rịa Vũng Tàu
+Địa chỉ: 12-14 Thuỳ Vân, Bà Rịa Vũng Tàu
+Sao: 4 Sao
+Ngày đến: 25/12/2023
+Ngày đi: 26/12/2023
+Đơn giá: 410000
+
+Khách sạn thứ 4:
+ID: KS5
+Họ tên: Green Garden
+Địa chỉ: 2 Truong Cong Dinh, Bà Rịa Vũng Tàu
+Địa chỉ: 2 Truong Cong Dinh, Bà Rịa Vũng Tàu
+Sao: 5 Sao
+Ngày đến: 26/12/2023
+Ngày đi: 27/12/2023
+Đơn giá: 500000Danh sách nhà hàng 
+
+Nhà hàng thứ 1:
+ID: NH6
+Họ tên: Phước Hải
+Địa chỉ: 352 Phước Hải, Bà Rịa Vũng Tàu
+Địa chỉ: 352 Phước Hải, Bà Rịa Vũng Tàu
+Sao: 3 Sao
+Ngày: Gia Dinh 4 Nguuoi
+Combo: 25/12/2023
+Gía combo: 320000
+
+Nhà hàng thứ 2:
+ID: NH7
+Họ tên: Lan Rừng
+Địa chỉ: 221 Trương Công Định, Bà Rịa Vũng Tàu
+Địa chỉ: 221 Trương Công Định, Bà Rịa Vũng Tàu
+Sao: 4 Sao
+Ngày: Mot Nguoi
+Combo: 26/12/2023
+Gía combo: 200000Danh sách thành phố
+
+ Thành phố  1.
+ Thành Phố : TP. Đà Lạt
+ Khí hậu Lạnh
+ Nhiệt độ 16 doC
+ Ngôn ngữ Tiếng việtDanh sách phương tiện
+
+ Phương tiện thứ 1.
+ Biển kiểm soát : MH-221
+ Số chỗ ngồi 120
+ Loại phương tiện Máy bay
+
+ Phương tiện thứ 2.
+ Biển kiểm soát : F2-2222
+ Số chỗ ngồi 2
+ Loại phương tiện Xe máy
+
+ Phương tiện thứ 3.
+ Biển kiểm soát : BV-299432.TS
+ Số chỗ ngồi 46
+ Loại phương tiện Tau thuy
+Người đặt vé: Thanh Nguyễn
+------Giá tour: 11500000
+========================Tour thứ 4 :Tên tour: Phố cổ Hà Nội
+Ngày: 12/12/2023 ~ 14/12/2023
+Danh sách thành viên 
+
+Thành viên thứ 1:
+ID: HK10
+Họ tên: Thanh Nam
+Ngày sinh: 16/02/1995
+Địa chỉ: Hà Nội
+Số điện thoại: 0987650234
+Căn cước công dân: 231551469
+Loại thành viên: TV
+Điểm tích lũy: 10
+Tour đã đặt: 
+
+Thành viên th

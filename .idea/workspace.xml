@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b24504c4-5806-41c2-96ae-3e766f26c13b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/dataTour.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/DanhSachThanhVien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/DanhSachThanhVien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/DanhSachTourDuLich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/DanhSachTourDuLich.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/KhachSan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/KhachSan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/TourDuLich.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/TourDuLich.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +39,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "thay-doi-phan-sua-dstv",
+    "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -61,22 +65,11 @@
       <workItem from="1701013572853" duration="367000" />
       <workItem from="1701015395373" duration="2627000" />
       <workItem from="1701018138768" duration="1224000" />
-      <workItem from="1701095688162" duration="2292000" />
+      <workItem from="1701095688162" duration="4980000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/DanhSachTourDuLich.java</url>
-          <line>110</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
