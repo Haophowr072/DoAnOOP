@@ -91,7 +91,7 @@ public class DanhSachThanhVien implements DanhSach{
         xuat();
         System.out.println("Nhập ID thành viên cần sửa");
         String so = sc.nextLine();
-        for(int i=0; i<n; i++){
+        for (int i = 0; i < n; i++) {
             if (dstv[i] instanceof HanhKhach) {
                 if (dstv[i].getId().equals(so)) {
                     System.out.println("1.Sửa tên nhà hàng");
@@ -142,7 +142,7 @@ public class DanhSachThanhVien implements DanhSach{
                 }
 
             } else {
-                if (dstv[i].getId().equals(ma)) {
+                if (dstv[i].getId().equals(so)) {
                     System.out.println("1.Sửa tên khách sạn");
                     System.out.println("2.Sửa địa chỉ");
                     System.out.println("3.Sửa sao");
@@ -150,9 +150,9 @@ public class DanhSachThanhVien implements DanhSach{
                     System.out.println("5.Sửa ngày đi");
                     System.out.println("6.Sửa đơn giá ");
                     System.out.println("Vui lòng chọn");
-                    int so = sc.nextInt();
+                    int ma = sc.nextInt();
                     sc.nextLine();
-                    switch (so) {
+                    switch (ma) {
                         case 1:
                             System.out.println("Nhập: ");
                             String ten = sc.nextLine();
@@ -189,9 +189,10 @@ public class DanhSachThanhVien implements DanhSach{
                     }
 
                 }
+            }
+            System.out.println("Không tìm thấy ID " + so);
+            System.out.println();
         }
-        System.out.println("Không tìm thấy ID " + so);
-        System.out.println();
     }
 
     public void timKiem() {
