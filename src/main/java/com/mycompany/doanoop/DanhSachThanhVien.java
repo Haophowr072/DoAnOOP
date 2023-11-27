@@ -94,12 +94,13 @@ public class DanhSachThanhVien implements DanhSach{
         for (int i = 0; i < n; i++) {
             if (dstv[i] instanceof HanhKhach) {
                 if (dstv[i].getId().equals(so)) {
-                    System.out.println("1.Sửa tên nhà hàng");
-                    System.out.println("2.Sửa địa chỉ");
-                    System.out.println("3.Sửa sao");
-                    System.out.println("4.Sửa ngày");
-                    System.out.println("5.Sửa combo");
-                    System.out.println("6.Sửa giá combo");
+                    System.out.println("1.Sửa tên hành khách");
+                    System.out.println("2.Sửa ngày sinh");
+                    System.out.println("3.Sửa địa chỉ");
+                    System.out.println("4.Sửa số điện thoại");
+                    System.out.println("5.Sửa căn cước công dân");
+                    System.out.println("6.Sửa loại thành viên");
+                    System.out.println("7.Sửa điểm tích lũy");
                     System.out.println("Vui lòng chọn");
                     int ma = sc.nextInt();
                     sc.nextLine();
@@ -112,29 +113,34 @@ public class DanhSachThanhVien implements DanhSach{
 
                         case 2:
                             System.out.println("Nhập: ");
-                            String diaChi = sc.nextLine();
-                            dstv[i].setTen(diaChi);
+                            String ngaySinh = sc.nextLine();
+                            dstv[i].setNgaySinh(ngaySinh);
                             break;
 
                         case 3:
                             System.out.println("Nhập: ");
-                            String sao = sc.nextLine();
-                            dstv[i].setTen(sao);
+                            String diaChi = sc.nextLine();
+                            dstv[i].setDiaChi(diaChi);
                             break;
                         case 4:
                             System.out.println("Nhập: ");
-                            String ngay = sc.nextLine();
-                            dstv[i].setTen(ngay);
+                            String sdt = sc.nextLine();
+                            dstv[i].setSdt(sdt);
                             break;
                         case 5:
                             System.out.println("Nhập: ");
-                            String combo = sc.nextLine();
-                            dstv[i].setTen(combo);
+                            String cccd = sc.nextLine();
+                            dstv[i].setCCCD(cccd);
                             break;
                         case 6:
                             System.out.println("Nhập: ");
-                            String giaCombo = sc.nextLine();
-                            dstv[i].setTen(giaCombo);
+                            String loaiTV = sc.nextLine();
+                            ((HanhKhach) dstv[i]).setLoaiTV(loaiTV);
+                            break;
+                        case 7:
+                            System.out.println("Nhập: ");
+                            String diemTL = sc.nextLine();
+                            ((HanhKhach) dstv[i]).setDiemTichLuy(diemTL);
                             break;
 
                     }
@@ -143,12 +149,13 @@ public class DanhSachThanhVien implements DanhSach{
 
             } else {
                 if (dstv[i].getId().equals(so)) {
-                    System.out.println("1.Sửa tên khách sạn");
-                    System.out.println("2.Sửa địa chỉ");
-                    System.out.println("3.Sửa sao");
-                    System.out.println("4.Sửa ngày đến");
-                    System.out.println("5.Sửa ngày đi");
-                    System.out.println("6.Sửa đơn giá ");
+                    System.out.println("1.Sửa tên hướng dẫn viên");
+                    System.out.println("2.Sửa ngày sinh");
+                    System.out.println("3.Sửa địa chỉ");
+                    System.out.println("4.Sửa số điện thoại");
+                    System.out.println("4.Sửa căn cước công dân");
+                    System.out.println("5.Sửa kinh nghiệm");
+                    System.out.println("6.Sửa ngày vào làm ");
                     System.out.println("Vui lòng chọn");
                     int ma = sc.nextInt();
                     sc.nextLine();
@@ -161,37 +168,41 @@ public class DanhSachThanhVien implements DanhSach{
 
                         case 2:
                             System.out.println("Nhập: ");
-                            String diaChi = sc.nextLine();
-                            dstv[i].setTen(diaChi);
+                            String ngaySinh = sc.nextLine();
+                            dstv[i].setNgaySinh(ngaySinh);
                             break;
 
                         case 3:
                             System.out.println("Nhập: ");
-                            String sao = sc.nextLine();
-                            dstv[i].setTen(sao);
+                            String diaChi = sc.nextLine();
+                            dstv[i].setDiaChi(diaChi);
                             break;
                         case 4:
                             System.out.println("Nhập: ");
-                            String ngayDen = sc.nextLine();
-                            dstv[i].setTen(ngayDen);
+                            String sdt = sc.nextLine();
+                            dstv[i].setSdt(sdt);
                             break;
                         case 5:
                             System.out.println("Nhập: ");
-                            String ngayDi = sc.nextLine();
-                            dstv[i].setTen(ngayDi);
+                            String cccd = sc.nextLine();
+                            dstv[i].setCCCD(cccd);
                             break;
                         case 6:
                             System.out.println("Nhập: ");
-                            String donGia = sc.nextLine();
-                            dstv[i].setTen(donGia);
+                            String kinhNghiem = sc.nextLine();
+                            ((HuongDanVien) dstv[i]).setKinhNghiem(kinhNghiem);
                             break;
-
+                        case 7:
+                            System.out.println("Nhập: ");
+                            String ngay = sc.nextLine();
+                            ((HuongDanVien) dstv[i]).setNgayVaoLam(ngay);
+                            break;
                     }
-
+                    System.out.println("Sửa thành công");
+                    System.out.println();
                 }
+
             }
-            System.out.println("Không tìm thấy ID " + so);
-            System.out.println();
         }
     }
 
