@@ -116,27 +116,6 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 	    System.out.println();
 		
 	}
-	
-	public void tinhTien()
-	{
-		for(int i=0;i<n;i++)
-		{
-			if(cskd[i] instanceof NhaHang )
-			{
-				System.out.println("Tính tiền nhà hàng "+ cskd[i].getTen()+ ": ");
-				cskd[i].tinhTien();
-				System.out.println();
-			}
-			else
-			{
-				System.out.println("Tính tiền khách sạn "+ cskd[i].getTen()+ ": ");
-				cskd[i].tinhTien();
-				System.out.println();
-			}
-		}
-	}
-
-
 
 	public void xuatNhaHang() {
 		System.out.println("Danh sach cskd");
@@ -154,8 +133,25 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 				cskd[i].xuat();
 			}
 		}
+	}
 
-
+	public void tinhTien()
+	{
+		for(int i=0;i<cskd.length;i++)
+		{
+			if(cskd[i] instanceof NhaHang )
+			{
+				System.out.println("Nhà hàng "+ cskd[i].getTen()+ ": ");
+				cskd[i].tinhTien();
+				System.out.println();
+			}
+			else
+			{
+				System.out.println("Khách sạn "+ cskd[i].getTen()+ ": ");
+				cskd[i].tinhTien();
+				System.out.println();
+			}
+		}
 	}
 
 

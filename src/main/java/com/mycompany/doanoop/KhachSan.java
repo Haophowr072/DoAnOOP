@@ -74,7 +74,7 @@ public class KhachSan extends CoSoKinhDoanh {
 
 		
 	}
-	
+	@Override
 	public void tinhTien()
 	{
 		 try {
@@ -84,7 +84,7 @@ public class KhachSan extends CoSoKinhDoanh {
 			long endValue = endDate.getTime();
 			long tinh = endValue - startValue;
 			long result = tinh/(24*60*60*1000);
-			System.out.println(" Tổng giá tiền khách sạn: "+ (result*donGia) );
+			System.out.println(" Tổng tiền : "+ (result*donGia) );
 			
 		} catch (ParseException e) {
 			

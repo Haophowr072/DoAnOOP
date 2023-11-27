@@ -120,7 +120,7 @@ public class Main {
 		tdl[3] = new TourDuLich("Pho co Ha Noi", "12/12/2021", "14/12/2021", 12500000, "Thanh Nam", dstv4, dspt4, dstp4, dscskd4);
 
 
-		CoSoKinhDoanh cskd5[] = new CoSoKinhDoanh[5];
+		CoSoKinhDoanh cskd5[] = new CoSoKinhDoanh[4];
 		cskd5[0] = new NhaHang("Phu Thinh", "352 Nguyen Chi Thanh, Da Nang", "4 Sao", "Gia Dinh 4 Nguoi", "08/12/2021", 220000);
 		cskd5[1] = new NhaHang("Quang Trung", "22 Quang Trung, Da Nang", "5 Sao", "Mot Nguoi", "09/12/2021", 200000);
 		cskd5[2] = new KhachSan("Thien Thoi", "111 Yen Bai, Da Nang", "4 Sao", "08/12/2021", "09/12/2021", 320000);
