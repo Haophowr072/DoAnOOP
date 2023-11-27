@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b24504c4-5806-41c2-96ae-3e766f26c13b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/DanhSachThanhVien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/doanoop/DanhSachThanhVien.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +35,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "doi-thong-tin-main",
+    "git-widget-placeholder": "thay-doi-phan-sua-dstv",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -60,6 +61,7 @@
       <workItem from="1701013572853" duration="367000" />
       <workItem from="1701015395373" duration="2627000" />
       <workItem from="1701018138768" duration="1224000" />
+      <workItem from="1701095688162" duration="2292000" />
     </task>
     <servers />
   </component>
