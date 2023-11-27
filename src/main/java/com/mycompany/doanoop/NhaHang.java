@@ -54,20 +54,20 @@ public class NhaHang extends CoSoKinhDoanh {
 	{
 		super.nhap();
 		Scanner sc= new Scanner(System.in);
-		System.out.println("Nhap ngay :");
+		System.out.println("Nhập ngày :");
 		ngay=sc.nextLine();
-		System.out.println("Nhap combo:");
+		System.out.println("Nhập combo:");
 		combo=sc.nextLine();
-		System.out.println("Nhap gia combo:");
+		System.out.println("Nhập giá combo:");
 		giaCombo=sc.nextInt();
 				
 	}
 
 	public void xuat() {
 		super.xuat();
-		System.out.println("Ngay: " + ngay);
+		System.out.println("Ngày: " + ngay);
 		System.out.println("Combo: " + combo);
-		System.out.println("Gia combo: " + giaCombo);
+		System.out.println("Gía combo: " + giaCombo);
 	}
 	@Override
 	public void tinhTien()

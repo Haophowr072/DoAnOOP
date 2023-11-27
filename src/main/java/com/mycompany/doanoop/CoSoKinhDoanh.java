@@ -49,11 +49,11 @@ public abstract class CoSoKinhDoanh {
 	public void nhap()
 	{
 		Scanner sc= new Scanner(System.in);
-		System.out.println("Nhap ten:");
+		System.out.println("Nhập tên:");
 		this.ten=sc.nextLine();
-		System.out.println("Nhap dia chi:");
+		System.out.println("Nhập địa chỉ:");
 		this.diaChi=sc.nextLine();
-		System.out.println("Nhap sao:");
+		System.out.println("Nhập sao:");
 		this.sao=sc.nextLine();
 				
 	}
@@ -61,8 +61,8 @@ public abstract class CoSoKinhDoanh {
 	public void xuat()
 	{
 		System.out.println("ID: " + id);
-		System.out.println("Ten: " + ten);
-		System.out.println("Dia chi: " + diaChi);
+		System.out.println("Tên: " + ten);
+		System.out.println("Địa chỉ: " + diaChi);
 		System.out.println("Sao: " + sao);
 
 	}
