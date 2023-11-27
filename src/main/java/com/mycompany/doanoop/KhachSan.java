@@ -55,12 +55,12 @@ public class KhachSan extends CoSoKinhDoanh {
 	{
 		super.nhap();
 		Scanner sc= new Scanner(System.in);
-		System.out.println("Nhap ngay den:");
-		this.ngayDen=sc.nextLine();
-		System.out.println("Nhap ngay di:");
-		this.ngayDi=sc.nextLine();
-		System.out.println("Nhap don gia:");
-		int donGia=sc.nextInt();
+		System.out.println("Nhập ngày đến:");
+		ngayDen=sc.nextLine();
+		System.out.println("Nhập ngày đi:");
+		ngayDi=sc.nextLine();
+		System.out.println("Nhập đơn giá:");
+		donGia=sc.nextInt();
 		sc.nextLine();
 				
 	}
@@ -68,9 +68,9 @@ public class KhachSan extends CoSoKinhDoanh {
 	public void xuat()
 	{
 		super.xuat();
-		System.out.println("Ngay den: " + ngayDen);
-		System.out.println("Ngay di: " + ngayDi);
-		System.out.println("Don gia: " + donGia);
+		System.out.println("Ngày đến: " + ngayDen);
+		System.out.println("Ngày đi: " + ngayDi);
+		System.out.println("Đơn giá: " + donGia);
 
 		
 	}
