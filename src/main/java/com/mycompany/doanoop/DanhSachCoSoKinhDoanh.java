@@ -39,8 +39,8 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 		}
 	}
 	public void xuat() {
-		xuatKS();
-		xuatNH();
+		xuatKhachSan();
+		xuatNhaHang();
 	}
 	@Override
 	public void them() {
@@ -158,25 +158,6 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 
 	}
 
-	public void xuatNH() {
-		System.out.println("Danh sach nha hang");
-		for(int i=0; i<n;i++)
-			if(cskd[i] instanceof NhaHang)
-			{
-				cskd[i].xuat();
-			}
-		
-	}
-	
-	public void xuatKS() {
-		System.out.println("Danh sach khach san");
-		for(int i=0; i<n;i++)
-			if(cskd[i] instanceof KhachSan)
-			{
-				cskd[i].xuat();
-			}
-		
-	}
 
 	@Override
 	public void showMenu() {
@@ -212,11 +193,10 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
                     timKiem();
                     break;
                 case 5:
-                    xuatNH();
-                    
+					xuatNhaHang();
                     break;
                 case 6:
-                	xuatKS();
+					xuatKhachSan();
                     break;
                 case 7:
                    xuat();
@@ -233,46 +213,6 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
                     break;
             }
         }while (n!=0);
-		
-	}
-
-	public void xuatNhaHang() {
-		System.out.println("Danh sach cskd");
-		for(int i=0;i<n;i++) {
-			if (cskd[i] instanceof NhaHang) {
-				cskd[i].xuat();
-			}
-		}
-	}
-
-	public void xuatKhachSan() {
-		System.out.println("Danh sach cskd");
-		for (int i = 0; i < n; i++) {
-			if (cskd[i] instanceof KhachSan) {
-				cskd[i].xuat();
-			}
-		}
-
-
-	}
-
-	public void xuatNH() {
-		System.out.println("Danh sach nha hang");
-		for(int i=0; i<n;i++)
-			if(cskd[i] instanceof NhaHang)
-			{
-				cskd[i].xuat();
-			}
-		
-	}
-	
-	public void xuatKS() {
-		System.out.println("Danh sach khach san");
-		for(int i=0; i<n;i++)
-			if(cskd[i] instanceof KhachSan)
-			{
-				cskd[i].xuat();
-			}
 		
 	}
     public String toStringNhaHang() {
