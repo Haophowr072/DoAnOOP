@@ -46,7 +46,7 @@ public class DanhSachPhuongTien implements DanhSach {
 		for(int i=0 ; i<soLuongpt ; i++) {
 			if(dspt[i].getBienKiemSoat().equals(bienso)) {
 				for(int j=i ; j<soLuongpt-1 ;j++) {
-					dspt[i]=dspt[j+1];
+					dspt[j]=dspt[j+1];
 					dspt = Arrays.copyOf(dspt, soLuongpt-1);
 				}
 				System.out.println(" Xóa thành công ");
