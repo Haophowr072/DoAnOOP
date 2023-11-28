@@ -58,9 +58,10 @@ public class DanhSachTourDuLich implements DanhSach {
 
 
     public void timKiem() {
+        System.out.println("------------Tìm kiếm tour--------------");
         System.out.println("Nhập tên tour cần tìm ");
         String ten = sc.nextLine();
-        for(int i=0; i<tdl.length; i++){
+        for(int i=0; i<soLuong; i++){
             if(tdl[i].getTenTour().equals(ten)){
                 tdl[i].xuat();
                 return;
@@ -152,6 +153,7 @@ public class DanhSachTourDuLich implements DanhSach {
                         System.out.println("0. Thoát");
                         System.out.print("Vui lòng chọn: ");
                         x  = sc.nextInt();
+                        sc.nextLine();
                         switch (x) {
                             case 0:
                                 showMenu();
