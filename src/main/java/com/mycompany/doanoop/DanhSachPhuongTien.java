@@ -25,16 +25,17 @@ public class DanhSachPhuongTien implements DanhSach {
 
 	public void them() {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Nhập số lượng cần thêm ");
+		System.out.println("Nhập số lượng phương tiện cần thêm ");
 		int so = sc.nextInt();
 		sc.nextLine();
 		for(int i=0 ; i<so ; i++) {
-			dspt = Arrays.copyOf(dspt , soLuongpt+1);
-			dspt[soLuongpt]= new PhuongTien();
+			dspt =Arrays.copyOf(dspt, soLuongpt+1);
+			dspt[soLuongpt]= new PhuongTien() ;
 			dspt[soLuongpt].nhap();
 			soLuongpt++;
 		}
 		System.out.println(" Thêm thành công ");
+		System.out.println();
 		
 	}
 
@@ -44,16 +45,18 @@ public class DanhSachPhuongTien implements DanhSach {
 		String bienso =sc.nextLine(); 
 		for(int i=0 ; i<soLuongpt ; i++) {
 			if(dspt[i].getBienKiemSoat().equals(bienso)) {
-				for(int j=i; j<soLuongpt-1; j++) {
-					dspt[j]=dspt[j+1];
+				for(int j=i ; j<soLuongpt-1 ;j++) {
+					dspt[i]=dspt[j+1];
 					dspt = Arrays.copyOf(dspt, soLuongpt-1);
 				}
 				System.out.println(" Xóa thành công ");
+				System.out.println();
 				soLuongpt--;
 				return;
 			}
 			System.out.println("Không tìm thấy phương tiện"  );
 			System.out.println();
+			
 			
 		}
 		
@@ -106,7 +109,7 @@ public class DanhSachPhuongTien implements DanhSach {
 		System.out.println("Nhập biển số xe cần tìm ");
 		String timKiem = sc.nextLine();
 		for(int i=0 ; i<soLuongpt ; i++) {
-			if(dspt[i].getBienKiemSoat().equals(timKiem) ) {
+			if(dspt[i].getBienKiemSoat().equals(timKiem)) {
 				dspt[i].xuat();
 				return;
 			}

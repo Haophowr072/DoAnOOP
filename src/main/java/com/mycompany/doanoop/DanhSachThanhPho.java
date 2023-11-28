@@ -29,7 +29,7 @@ public class DanhSachThanhPho implements DanhSach{
 	public void them() {
 		System.out.println("Số lượng thành phố cần thêm");
 		String so = sc.nextLine();
-		for(int i=0 ; i<so.length() ; i++) {
+		for(int i=0 ; i<so.length(); i++) {
 			dstp = Arrays.copyOf(dstp , soLuongtp+1);
 			dstp[soLuongtp]= new ThanhPho();
 			dstp[soLuongtp].nhap();
