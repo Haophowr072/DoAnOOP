@@ -208,7 +208,8 @@ public class DanhSachCoSoKinhDoanh implements DanhSach {
 	}
 
 	public void xuatNhaHang() {
-		System.out.println("Danh sách nhà hàng");
+		System.out.println("" +
+				"Danh sách nhà hàng");
 		for (int i = 0; i < n; i++) {
 			if (cskd[i] instanceof NhaHang) {
 				cskd[i].xuat();
